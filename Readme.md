@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Irina Kirichenko](https://up.htmlacademy.ru/adaptive/22/user/1671865).
-* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
+* Наставник: [Сергей Артёмов🦊](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
