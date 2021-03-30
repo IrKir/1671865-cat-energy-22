@@ -1,0 +1,18 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent-text-color);
+  background-color: var(--basic-accent);
+}
