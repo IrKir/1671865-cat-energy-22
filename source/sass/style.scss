@@ -1,4 +1,5 @@
-// Начните писать стили здесь
-body {
-  background:none;
-}
+// Global
+
+@import "global/root.scss";
+@import "global/font.scss"
+
