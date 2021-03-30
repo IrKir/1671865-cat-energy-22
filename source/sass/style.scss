@@ -1,5 +1,12 @@
 // Global
 
+@import "global/font.scss";
 @import "global/root.scss";
-@import "global/font.scss"
+@import "global/global.scss";
 
+// Block
+
+@import "blocks/page-header.scss";
+@import "blocks/slogan.scss";
+@import "blocks/slogan__decor.scss";
+@import "blocks/link.scss";
