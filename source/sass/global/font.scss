@@ -1,16 +1,20 @@
 @font-face {
-  font-family: "Oswald Regular";
-  src: local("Oswald"),
-       url("oswaldmedium.woff2") format("woff2"),
-       url("oswaldmedium.woff") format("woff");
+  font-family: "Oswald";
+  src:
+    url("oswaldmedium.woff2") format("woff2"),
+    url("oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Oswald Medium";
-  src: local("Oswald"),
-       url("oswaldregular.woff2") format("woff2"),
-       url("oswaldregular.woff") format("woff");
+  font-family: "Oswald";
+  src:
+    url("oswaldregular.woff2") format("woff2"),
+    url("oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+:root {
+  --basic-font: Arial;
+  --accent-font: Oswald;
 }
