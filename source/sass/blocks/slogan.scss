@@ -6,3 +6,40 @@
   color: var(--accent-text-color);
   text-align: center;
 }
+
+.slogan__decor {
+  width: 320px;
+  height: 440px;
+  background:
+    url("../img/background/opasity-restangle.png") no-repeat,
+    url("../img/background/cat-background.png") no-repeat;
+}
+
+.slogan__title {
+  width: 249px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 27px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.slogan__text {
+  width: 198px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 25px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.slogan__image {
+  width: 280px;
+  height: 270px;
+  background: url("../img/can-mobile.png") no-repeat 20px 29px;
+}
