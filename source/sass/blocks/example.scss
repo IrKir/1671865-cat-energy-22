@@ -13,7 +13,6 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  text-transform: uppercase;
   color: var(--header-font);
 }
 
@@ -81,11 +80,11 @@
   border: none;
 }
 
- .example__key:last-child {
+.example__key:last-child {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--header-font);
- }
+}

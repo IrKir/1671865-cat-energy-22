@@ -1,0 +1,36 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 28px;
+}
+
+.contacts__invitation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 28px 20px;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--header-font);
+}
+
+.contacts__address {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  font-family: var(--basic-font), sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-text-color);
+}
