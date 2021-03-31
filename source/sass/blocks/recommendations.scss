@@ -31,14 +31,15 @@
 }
 
 .recommendations__text {
-  border: 1px solid black;
-
+  
   &::before {
     content: "";
     width: 60px;
     height: 60px;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 20px;
+    float: left;
     background-color: var(--basic-accent);
   }
 }
