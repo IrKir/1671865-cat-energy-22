@@ -14,39 +14,3 @@
   text-transform: uppercase;
   color: var(--header-font);
 }
-
-.common {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--accent-font), sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--basic-text-color);
-}
-
-.common__wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 13px;
-}
-
-.common__wrapper:last-child {
-  margin-bottom: 24px;
-}
-
-.common__label {
-  padding: 13px 0 14px;
-}
-
-.common__input {
-  padding: 13px 0 14px 15px;
-  font-family: var(--accent-font), sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--basic-text-color);
-  border: 1px solid var(--additional-accent-grayish);
-}
