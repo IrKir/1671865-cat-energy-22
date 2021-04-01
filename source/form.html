@@ -67,14 +67,18 @@
               <input class="radio__input" type="radio" name="diet" id="radio-unknown" value="unknown">
               <label class="radio__label" for="radio-unknown">Не знаю (нужен ваш совет)
             </label>
-           </div>
+            </div>
           </div>
           <div class="owner-contacts">
             <p class="subtitle">Контактные данные (владельца кота)</p>
-            <label class="owner-contacts__label" for="email">e-mail:<small>*</small></label>
-            <input class="owner-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
-            <label class="owner-contacts__label" for="tel">телефон:<small>*</small></label>
-            <input class="owner-contacts__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+            <div class="owner-contacts__wrapper">
+              <label class="owner-contacts__label" for="email">e-mail:<small>*</small></label>
+              <input class="owner-contacts__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="owner-contacts__wrapper">
+              <label class="owner-contacts__label" for="tel">телефон:<small>*</small></label>
+              <input class="owner-contacts__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
           <div class="comment">
             <p class="subtitle">Комментарий</p>
@@ -148,7 +152,5 @@
         </a>
       </div>
     </footer>
-
-
 </body>
 </html>
