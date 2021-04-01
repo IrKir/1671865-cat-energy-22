@@ -1,5 +1,41 @@
 .addition {
-  width: 280px;
+  width: 320px;
   border: none;
+  margin-top: 23px;
+}
 
+.addition__list {
+  margin-bottom: 34px;
+  padding-left: 20px;
+  list-style: none;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--header-font);
+  border: 1px solid green;
+}
+
+.addition__item {
+  margin-bottom: 13px;
+}
+
+.addition__item:last-child {
+  margin-bottom: 0;
+}
+
+.form__note {
+  display: block;
+  width: 280px;
+  padding: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  text-align: center;
+  font-family: var(--basic-font), sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--basic-text-color);
 }
