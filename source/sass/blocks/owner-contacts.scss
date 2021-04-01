@@ -1,13 +1,12 @@
 .owner-contacts {
-  width: 320px;
-  padding-top: 26px;
-  padding-bottom: 24px;
-  border: 1px solid red;
+  width: 280px;
 }
 
 .owner-contacts__wrapper {
-  width: 280px;
-  margin: 0 20px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -21,7 +20,7 @@
 }
 
 .owner-contacts__input {
-  width: 204px;
+  width: 219px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
   line-height: 18px;
