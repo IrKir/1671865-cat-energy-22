@@ -3,6 +3,7 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const postcssUrl = require("postcss-url");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
@@ -14,6 +15,9 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
+      postcssUrl({
+        assetsPath: "../"
+      }),
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
