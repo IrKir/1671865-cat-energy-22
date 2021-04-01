@@ -2,6 +2,11 @@
   width: 280px;
 }
 
+.owner-contacts__subtitle {
+  margin-top: 26px;
+  margin-bottom: 35px;
+}
+
 .owner-contacts__wrapper {
   display: flex;
   justify-content: space-between;
@@ -16,7 +21,7 @@
 }
 
 .owner-contacts__wrapper:last-child {
-  margin-bottom: 0;
+  margin-bottom: 23px;
 }
 
 .owner-contacts__input {
@@ -26,6 +31,6 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  padding: 14px 0 14px 15px;
+  padding: 12px 0 12px 15px;
   color: var(--basic-text-color);
 }

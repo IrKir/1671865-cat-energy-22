@@ -1,12 +1,17 @@
 .addition {
-  width: 320px;
+  width: 280px;
   border: none;
+}
+
+.addition__subtitle {
   margin-top: 23px;
+  margin-bottom: 38px;
 }
 
 .addition__list {
+  margin: 0;
+  padding: 0;
   margin-bottom: 34px;
-  padding-left: 20px;
   list-style: none;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
@@ -15,7 +20,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: var(--header-font);
-  border: 1px solid green;
 }
 
 .addition__item {
