@@ -1,0 +1,21 @@
+.copyright__wrapper {
+  width: 281px;
+  padding: 22px 0;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--basic-font), sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-text-color);
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 0;
+}
