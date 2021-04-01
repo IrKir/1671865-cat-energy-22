@@ -24,13 +24,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-text-color);
-  border-bottom: 1px solid var(--additional-accent);
 }
 
 .common__wrapper {
   display: flex;
+  justify-content: space-between;display: flex;
   justify-content: space-between;
-  width: 280px;
   margin-bottom: 13px;
 }
 
