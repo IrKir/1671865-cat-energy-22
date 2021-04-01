@@ -19,7 +19,6 @@
 .common {
   display: flex;
   flex-direction: column;
-  margin-bottom: 27px;
   padding: 0 20px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
@@ -28,16 +27,17 @@
   text-transform: uppercase;
   color: var(--basic-text-color);
   border-bottom: 1px solid var(--additional-accent);
+  border: 1px solid red;
 }
 
-.common__block {
+.common__wrapper {
   display: flex;
   justify-content: space-between;
   width: 280px;
   margin-bottom: 13px;
 }
 
-.common__block:last-child {
+.common__wrapper:last-child {
   margin-bottom: 24px;
 }
 
@@ -47,7 +47,6 @@
 }
 
 .common__input {
-
   padding: 13px 0 14px 15px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
@@ -57,4 +56,3 @@
   color: var(--basic-text-color);
   border: 1px solid var(--additional-accent-grayish);
 }
-
