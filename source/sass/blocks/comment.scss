@@ -1,0 +1,21 @@
+.comment {
+  width: 320px;
+}
+
+.comment__subtitle {
+  margin-bottom: 38px;
+}
+
+.comment__textarea {
+  display: block;
+  width: 280px;
+  padding-top: 9px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-text-color);
+  text-align: center;
+  border: 1px solid var(--additional-accent-grayish);
+}
