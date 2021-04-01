@@ -34,19 +34,25 @@
         </div>
       </nav>
     </header>
-    <main class="page-name">
-      <h1 class="page-name__title">Подбор программы</h1>
-      <section class="questionnaire">
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <section class="questionnaire page__leveler">
         <h2 class="visually-hidden">Анкета</h2>
         <p class="questionnaire__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="common">
+            <div class="common__block">
             <label class="common__label" for="name">Имя:<small>*</small></label>
             <input class="common__input" type="text" id="name" name="name" value="Барсик">
-            <label class="common__label" for="weight">Вес (кг):<small>*</small></label>
-            <input class="common__input" type="number" id="weight" name="weight" value="7">
-            <label class="common__label" for="age">Возраст (лет):</label>
-            <input class="common__input" type="number" id="age" name="age" value="7">
+            </div>
+            <div class="common__block">
+              <label class="common__label" for="weight">Вес (кг):<small>*</small></label>
+              <input class="common__input" type="number" id="weight" name="weight" value="7">
+            </div>
+            <div class="common__block">
+              <label class="common__label" for="age">Возраст (лет):</label>
+              <input class="common__input" type="number" id="age" name="age" value="7">
+            </div>
           </div>
           <div class="radio">
             <input class="radio__input" type="radio" name="diet" id="radio-slim" value="slim" checked>
