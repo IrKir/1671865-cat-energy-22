@@ -1,0 +1,21 @@
+.gift {
+  width: 280px;
+  padding-top: 39px;
+  padding-bottom: 35px;
+}
+
+.gift__image {
+  display: block;
+}
+
+.gift__text {
+  margin-top: -83px;
+  padding: 0;
+  width: 161px;
+  text-align: center;
+  font-family: var(--basic-font), sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--accent-text-color);
+}
