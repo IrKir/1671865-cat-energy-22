@@ -1,13 +1,5 @@
 .page-main {
   width: 320px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 110px;
-  }
 }
 
 .page-main__title {
