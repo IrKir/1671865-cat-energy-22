@@ -6,11 +6,29 @@
   width: 320px;
   padding: 39px 20px 0 20px;
   background-color: var(--additional-darkaccent);
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 55px 30px 61px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 59px 110px 56px;
+  }
 }
 
 .page-footer__identity {
   margin-bottom: 32px;
   border: 1px solid var(--additional-accent);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-footer__social {
@@ -19,4 +37,9 @@
   padding-bottom: 21px;
   border-bottom: 1px solid var(--additional-accent);
   border-top: 1px solid var(--additional-accent);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
