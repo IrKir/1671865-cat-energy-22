@@ -1,8 +1,14 @@
+// Viewports
+
+$desktop-width: 1440px;
+$tablet-width: 768px;
+$mobile-width-only: 767px;
+
 // Global
 
+@import "global/global.scss";
 @import "global/font.scss";
 @import "global/root.scss";
-@import "global/global.scss";
 
 // Index
 

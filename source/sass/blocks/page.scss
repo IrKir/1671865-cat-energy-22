@@ -6,4 +6,14 @@
 .page__header {
   margin-top: 11px;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 42px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
+    margin-bottom: 32px;
+  }
 }
