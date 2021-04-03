@@ -4,8 +4,9 @@
 }
 
 .page__header {
-  margin-top: 11px;
-  margin-bottom: 17px;
+  width: 280px;
+  padding-top: 11px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
