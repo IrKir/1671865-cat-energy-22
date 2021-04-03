@@ -79,15 +79,16 @@
 
   @media (min-width: $tablet-width) {
     width: 709px;
-    height: 609;
+    height: 609px;
     background: url("../../img/tablet/can-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
+    order: 0;
     width: 720px;
     height: 696px;
     background:
-      url("../../img/desktop/can-desktop.png") no-repeat 0 0,
+      url("../../img/desktop/can-desktop.png") no-repeat -200px 50%,
       url("../../img/desktop/rectangle-desktop.png") no-repeat,
       url("../../img/desktop/cat-desktop.png") no-repeat;
   }
