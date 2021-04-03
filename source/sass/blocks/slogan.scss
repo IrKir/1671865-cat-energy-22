@@ -1,41 +1,107 @@
 .slogan {
+  position: relative;
   width: 320px;
   font-family: var(--accent-font);
   color: var(--accent-text-color);
   text-align: center;
-}
 
-.slogan__decor {
-  width: 320px;
-  height: 440px;
-  background:
-    url("../../img/background/opasity-restangle.png") no-repeat,
-    url("../../img/background/cat-background.png") no-repeat;
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 709px;
+    text-align: left;
+    color: var(--font-color);
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .slogan__title {
   width: 249px;
-  padding-top: 27px;
   font-family: var(--accent-font), sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 0;
+  }
 }
 
 .slogan__text {
   width: 198px;
-  margin: 0 auto;
-  padding: 0;
   margin-top: 25px;
-  font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+}
+
+.slogan__decor {
+  position: absolute;
+  top: 27px;
+  left: 36px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .slogan__image {
-  width: 280px;
-  height: 270px;
-  background: url("../../img/can-mobile.png") no-repeat 20px 29px;
+  width: 320px;
+  height: 442px;
+  background:
+    url("../../img/can-mobile.png") no-repeat 50% 100%,
+    url("../../img/background/opasity-restangle.png") no-repeat,
+    url("../../img/background/cat-background.png") no-repeat;
+
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609;
+    background: url("../../img/tablet/can-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 696px;
+    background:
+      url("../../img/desktop/can-desktop.png") no-repeat 0 0,
+      url("../../img/desktop/rectangle-desktop.png") no-repeat,
+      url("../../img/desktop/cat-desktop.png") no-repeat;
+  }
+}
+
+.slogan__link {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 370px;
+    left: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 455px;
+    left: 190px;
+  }
 }
