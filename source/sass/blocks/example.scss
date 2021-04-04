@@ -2,6 +2,18 @@
   width: 320px;
   padding: 27px 20px 25px 20px;
   background-color: var(--additional-grayish);
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0;
+    background-color: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -13,6 +25,18 @@
   line-height: 40px;
   font-weight: 400;
   color: var(--header-font);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    margin-bottom: 76px;
+  }
 }
 
 .example__text {
@@ -24,6 +48,18 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .example__list {
@@ -40,6 +76,11 @@
   padding-top: 14px;
   padding-bottom: 17px;
   border: 1px solid var(--additional-light);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 51px;
+  }
 }
 
 .example__key {
@@ -49,6 +90,11 @@
   font-weight: 400;
   text-align: center;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__definition {
@@ -61,6 +107,11 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--header-font);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item:last-child {
@@ -79,11 +130,20 @@
   border: none;
 }
 
-.example__key:last-child {
+.example__key:last-of-type {
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--header-font);
+}
+
+.example__image {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 620px;
+    margin: 0;
+    padding: 0;
+  }
 }
