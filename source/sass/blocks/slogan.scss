@@ -1,12 +1,11 @@
 .slogan {
-  position: relative;
   width: 320px;
   font-family: var(--accent-font);
   color: var(--accent-text-color);
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    position: relative;
     width: 709px;
     text-align: left;
     color: var(--font-color);
@@ -33,7 +32,7 @@
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
-    margin-left: 0;
+    margin-left: 83px;
   }
 }
 
@@ -49,7 +48,7 @@
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 0;
+    margin-left: 83px;
   }
 }
 
@@ -97,12 +96,12 @@
 .slogan__link {
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 370px;
-    left: 112px;
+    top: 230px;
+    left: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 455px;
-    left: 190px;
+    top: 235px;
+    left: 80px;
   }
 }
