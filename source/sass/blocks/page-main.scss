@@ -1,5 +1,13 @@
 .page-main {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-main__title {
@@ -11,4 +19,18 @@
   font-weight: 400;
   text-decoration: none;
   color: var(header-font);
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-left: 69px;
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    margin-left: 110px;
+    margin-bottom: 56px;
+  }
 }
