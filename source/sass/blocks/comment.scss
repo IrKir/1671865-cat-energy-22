@@ -17,7 +17,7 @@
     margin-left: 40px;
   }
 
-  @media (width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 76px;
     margin-left: 0;
   }
@@ -46,7 +46,7 @@
     text-align: left;
   }
 
-  @media (width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     margin-left: 0;
   }
