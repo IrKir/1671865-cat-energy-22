@@ -1,9 +1,26 @@
 .comment {
   width: 280px;
+
+  @media (width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .comment__subtitle {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (width: $desktop-width) {
+    margin-bottom: 76px;
+    margin-left: 0;
+  }
 }
 
 .comment__textarea {
@@ -18,4 +35,19 @@
   color: var(--basic-text-color);
   text-align: center;
   border: 1px solid var(--additional-accent-grayish);
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  @media (width: $desktop-width) {
+    width: 1220px;
+    margin-left: 0;
+  }
 }
