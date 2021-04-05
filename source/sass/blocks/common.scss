@@ -1,4 +1,5 @@
 .common {
+  width: 280px;
   display: flex;
   flex-direction: column;
   font-family: var(--accent-font), sans-serif;
@@ -7,20 +8,48 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin-left: 41px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    margin-left: 0;
+  }
 }
 
 .common__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .common__wrapper:last-child {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .common__label {
   padding: 13px 0 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 12px;
+  }
 }
 
 .common__input {
@@ -32,4 +61,14 @@
   text-transform: uppercase;
   color: var(--basic-text-color);
   border: 1px solid var(--additional-accent-grayish);
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 12px 19px;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    width: 436px;
+  }
 }

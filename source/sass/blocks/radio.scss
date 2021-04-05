@@ -9,6 +9,17 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding: 25px 36px 25px 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .radio__wrapper {
@@ -16,5 +27,5 @@
 }
 
 .radio__wrapper:last-child {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }

@@ -2,6 +2,15 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .questionnaire__text {
@@ -13,4 +22,14 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--header-font);
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-left: 41px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }

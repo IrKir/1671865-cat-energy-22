@@ -16,10 +16,10 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button hidden class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div  hidden class="main-nav__wrapper">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -36,7 +36,7 @@
     </header>
     <main class="page-main page__leveler">
       <h1 class="page-main__title">Подбор программы</h1>
-      <section class="questionnaire">
+      <section class="questionnaire page__leveler">
         <h2 class="visually-hidden">Анкета</h2>
         <p class="questionnaire__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -54,7 +54,7 @@
               <input class="common__input" type="number" id="age" name="age" value="7">
             </div>
           </div>
-          <div class="radio">
+          <div class="radio page__leveler">
             <div class="radio__wrapper">
               <input class="radio__input" type="radio" name="diet" id="radio-slim" value="slim" checked>
               <label class="radio__label" for="radio-slim">Похудение</label>
