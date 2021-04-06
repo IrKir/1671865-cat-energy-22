@@ -19,12 +19,15 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
-    margin-left: 80px;
   }
 }
 
 .radio__wrapper {
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .radio__wrapper:last-child {
