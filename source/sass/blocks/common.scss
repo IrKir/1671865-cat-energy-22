@@ -10,15 +10,13 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 630px;
-    margin-left: 41px;
+    width: 668px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 569px;
-    margin-left: 0;
   }
 }
 
@@ -29,6 +27,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    margin-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
