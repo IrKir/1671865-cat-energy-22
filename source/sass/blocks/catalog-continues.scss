@@ -1,12 +1,29 @@
 .catalog-continues {
   text-align: center;
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .catalog-continues__title {
   width: 280px;
   margin-top: 23px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-top: 49px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .catalog-continues__text {
@@ -16,9 +33,32 @@
   line-height: 16px;
   font-weight: 400;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .catalog-continues__link {
   color: var(--basic-text-color);
   background-color: var(--additional-darkaccent);
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.catalog-continues__toggle {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 52px;
+  }
 }
