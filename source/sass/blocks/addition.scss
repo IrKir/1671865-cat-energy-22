@@ -3,13 +3,11 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
-    margin-left: 40px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-left: 0;
   }
 }
 
@@ -18,8 +16,14 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    width: 220px;
+    margin-left: 40px;
     margin-top: 65px;
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -37,11 +41,16 @@
   color: var(--header-font);
 
   @media (min-width: $tablet-width) {
+    margin-left: 40px;
     font-size: 20px;
     line-height: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
