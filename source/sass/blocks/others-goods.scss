@@ -1,6 +1,15 @@
 .others-goods {
   width: 320px;
   padding: 28px 20px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    padding: 0;
+  }
 }
 
 .others-goods__subtitle {
@@ -10,18 +19,42 @@
   margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 338px;
+    margin-left: 68px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .others-goods__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-right: 79px;
+  margin-left: 110px;
 }
 
 .others-goods__item {
   margin: 0;
   padding: 0;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
 }
 
 .others-goods__item:last-child {
@@ -35,6 +68,30 @@
   font-weight: 400;
   text-transform: uppercase;
   color: var(--addition-text-color);
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.others-goods__suddenly {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+  }
 }
 
 .others-goods__wrapper {
@@ -45,4 +102,19 @@
   line-height: 14px;
   font-weight: 400;
   color: var(--basic-text-color);
+
+  @media (min-width: $desktop-width) {
+    width: 306px;
+    padding: 0;
+  }
+}
+
+.others-goods__link {
+  @media (min-width: $tablet-width) {
+    width: 622px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
