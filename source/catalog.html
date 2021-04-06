@@ -16,10 +16,10 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button hidden class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div  hidden class="main-nav__wrapper">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="index.html">Главная</a>
@@ -35,8 +35,8 @@
       </nav>
     </header>
     <main class="page-main page__leveler">
-      <h1 class="page-main__title">Каталог продукции</h1>
-      <section class="main-catalog">
+      <h1 class="page-main__title page-main__title-catalog">Каталог продукции</h1>
+      <section class="main-catalog page__leveler">
         <h2 class="visually-hidden">Основной каталог</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item">
@@ -177,13 +177,13 @@
               </dl>
             <a class="link main-catalog__link-link" href="">Заказать</a>
           </li>
-        </ul>
-        <div class="catalog-continues">
+        <li class="catalog-continues">
           <button class="catalog-continues__toggle" type="button">Здесь будет плюс</button>
-          <h3 class="main-catalog__title catalog-continues__title">Показать еще 100500 товаров</h3>
-          <p class="catalog-continues__text">На самом деле вкусов гораздо больше!</p>
-          <a class="link catalog-continues__link" href="">Показать всё</a>
-        </div>
+          <h3 class="main-catalog__title catalog-continues__title page__leveler">Показать еще 100500 товаров</h3>
+          <p class="catalog-continues__text page__leveler">На самом деле вкусов гораздо больше!</p>
+          <a class="link catalog-continues__link page__leveler" href="">Показать всё</a>
+        </li>
+      </ul>
       </section>
       <section class="others-goods">
         <h2 class="visually-hidden">Вспомогательный каталог</h2>
