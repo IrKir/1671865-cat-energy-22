@@ -4,11 +4,11 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
-    padding: 0;
   }
 }
 
@@ -37,8 +37,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-right: 79px;
-  margin-left: 110px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 79px;
+    margin-left: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .others-goods__item {
@@ -47,6 +54,7 @@
   padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    width: 632px;
     padding-bottom: 28px;
   }
 
@@ -82,6 +90,7 @@
 
 .others-goods__suddenly {
   @media (min-width: $tablet-width) {
+    width: 632px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -90,7 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 630px;
+    width: 632px;
   }
 }
 
@@ -103,15 +112,20 @@
   font-weight: 400;
   color: var(--basic-text-color);
 
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 306px;
     padding: 0;
+    margin: 0;
   }
 }
 
 .others-goods__link {
   @media (min-width: $tablet-width) {
-    width: 622px;
+    width: 632px;
   }
 
   @media (min-width: $desktop-width) {

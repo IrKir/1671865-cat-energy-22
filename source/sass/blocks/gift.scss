@@ -1,15 +1,27 @@
 .gift {
   width: 280px;
+  height: 289px;
   padding-top: 39px;
   padding-bottom: 35px;
-}
+  background: url("../../img/gift-photo-mobile.png");
 
-.gift__image {
-  display: block;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    background: url("../../img/tablet/gift-photo-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    background: url("../../img/gift-photo-mobile.png");
+  }
 }
 
 .gift__text {
-  margin-top: -83px;
+  margin-bottom: 43px;
   padding: 0;
   width: 161px;
   text-align: center;
@@ -18,4 +30,14 @@
   line-height: 20px;
   font-weight: 400;
   color: var(--accent-text-color);
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    vertical-align: middle;
+  }
 }
