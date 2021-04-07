@@ -1,19 +1,6 @@
-.recommendations {
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}
-
 .recommendations__title {
   margin-top: 27px;
   margin-bottom: 38px;
-  padding: 0;
   font-family: var(--accent-font), sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -36,6 +23,7 @@
 .recommendations__list {
   list-style: none;
   padding: 0;
+  margin-bottom: 42px;
   font-family: var(--basic-font), sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -43,23 +31,14 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 60px;
-    row-gap: 37px;*/
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
   }
 }
 
 .recommendations__item {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -71,6 +50,10 @@
 }
 
 .recommendations__text {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+
   &::before {
     content: "";
     width: 60px;

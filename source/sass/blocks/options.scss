@@ -5,6 +5,8 @@
 }
 
 .options__list {
+  margin-top: 22px;
+  padding: 0;
   list-style: none;
 
   @media (min-width: $desktop-width) {
@@ -16,9 +18,7 @@
 
 .options__item {
   box-sizing: border-box;
-  width: 280px;
-  margin-top: 22px;
-  padding: 24px 33px 22px 20px;
+  margin-bottom: 20px;
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
@@ -32,9 +32,13 @@
   }
 }
 
+.options__item:last-child {
+  margin-bottom: 27px;
+}
+
 .options__title {
   margin: 0;
-  padding: 0;
+  padding: 25px 0 23px 22px;
   font-family: var(--accent-font), sans-serif;
   font-size: 24px;
   line-height: 37px;
@@ -99,10 +103,8 @@
 }
 
 .options__description {
-  padding: 0;
   margin: 0;
-  padding-top: 29px;
-  padding-bottom: 23px;
+  padding: 0 33px 23px 20px;
   font-family: var(--basic-font), sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -126,7 +128,7 @@
 .options__link {
   display: block;
   margin: 0;
-  padding-top: 19px;
+  padding: 15px 0 18px 19px;
   border-top: 1px solid var(--additional-accent);
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;

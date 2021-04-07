@@ -2,14 +2,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min min 1fr 1fr min;
-  width: 320px;
   font-family: var(--accent-font);
   color: var(--accent-text-color);
   text-align: center;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: min min min 1fr;
-    width: 709px;
     text-align: left;
     color: var(--font-color);
   }
@@ -23,8 +21,8 @@
 }
 
 .slogan__title {
+  width: 60%;
   margin-top: 27px;
-  width: 280px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   font-family: var(--accent-font), sans-serif;
@@ -33,7 +31,6 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    width: 500px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -48,7 +45,6 @@
 }
 
 .slogan__text {
-  width: 280px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   margin-top: 25px;
@@ -57,8 +53,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    width: 415px;
-    margin-bottom: 20px;
+    margin-bottom: 49px;
     margin-left: 83px;
     font-size: 20px;
     line-height: 20px;
@@ -71,13 +66,16 @@
 }
 
 .slogan__decor {
-  width: 320px;
-  height: 302px;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  background:
-    url("../../img/background/opasity-restangle.png") no-repeat,
-    url("../../img/background/cat-background.png") no-repeat;
+
+  &::before {
+    content: "";
+    height: 302px;
+    background:
+      url("../../img/background/opasity-restangle.png") no-repeat,
+      url("../../img/background/cat-background.png") no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -91,7 +89,6 @@
 }
 
 .slogan__wrap {
-  width: 280px;
   height: 270px;
   grid-column: 1 / 2;
   grid-row: 3 / 5;
@@ -128,7 +125,6 @@
 
 .slogan__image {
   display: block;
-  width: 280px;
   height: 270px;
 
   @media (min-width: $tablet-width) {
