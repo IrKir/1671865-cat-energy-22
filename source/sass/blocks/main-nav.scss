@@ -13,16 +13,6 @@
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: $tablet-width) {
-    width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 480px;
-  }
-}
-
 .main-nav__item {
   padding-top: 22px;
   padding-bottom: 24px;

@@ -3,12 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  padding: 39px 20px 0 20px;
+  padding: 39px 20px 22px 20px;
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding: 55px 30px 61px 30px;
     flex-direction: row;
     justify-content: space-between;
@@ -22,8 +20,10 @@
 }
 
 .page-footer__identity {
-  margin-bottom: 32px;
-  border: 1px solid var(--additional-accent);
+  margin: 0;
+  padding-bottom: 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--additional-accent);
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -31,15 +31,6 @@
   }
 }
 
-.page-footer__social {
-  width: 280px;
-  padding-top: 20px;
-  padding-bottom: 21px;
+.page-footer-social {
   border-bottom: 1px solid var(--additional-accent);
-  border-top: 1px solid var(--additional-accent);
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-  }
 }
