@@ -1,3 +1,10 @@
+.main-nav {
+  position: relative;
+  width: auto;
+  min-height: 66px;
+  background-color: var(--accent-text-color);
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
@@ -24,7 +31,7 @@
   text-align: center;
 }
 
-.main-nav__link.scss {
+.main-nav__link {
   font-family: var(--accent-font), sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -34,6 +41,13 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
   width: 24px;
-  height: 20px;
+  height: 18px;
+  cursor: pointer;
+  background: none;
 }
