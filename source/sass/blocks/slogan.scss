@@ -68,14 +68,10 @@
 .slogan__decor {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-
-  &::before {
-    content: "";
-    height: 302px;
-    background:
-      url("../../img/background/opasity-restangle.png") no-repeat,
-      url("../../img/background/cat-background.png") no-repeat;
-  }
+  height: 302px;
+  background:
+    url("../../img/background/opasity-restangle.png") no-repeat 50% 50%,
+    url("../../img/background/cat-background.png") 50% 50% no-repeat;
 
   @media (min-width: $tablet-width) {
     width: 709px;
