@@ -1,3 +1,7 @@
+.recommendations {
+  border-bottom: 1px solid var(--additional-lightaccent);
+}
+
 .recommendations__title {
   margin-top: 27px;
   margin-bottom: 38px;
@@ -22,7 +26,6 @@
 .recommendations__list {
   list-style: none;
   padding: 0;
-  margin-bottom: 42px;
   font-family: var(--basic-font), sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -41,10 +44,20 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    margin-bottom: 37px;
+    padding: 151px 38px 57px 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+  }
+}
+
+.recommendations__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
   }
 }
 
@@ -65,15 +78,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 245px;
     margin: 0;
     padding: 0;
 
     &::before {
+      position: absolute;
+      bottom: 71px;
+
       content: "";
       width: 60px;
       height: 60px;
-      float: left;
       margin-bottom: 30px;
       background-color: var(--basic-accent);
     }
