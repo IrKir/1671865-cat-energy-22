@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  width: auto;
   min-height: 66px;
   background-color: var(--accent-text-color);
 }
@@ -11,6 +10,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    width: 440px;
     display: flex;
     justify-content: space-between;
   }

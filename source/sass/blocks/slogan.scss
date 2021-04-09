@@ -121,6 +121,8 @@
 
 .slogan__link {
   @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 244px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin-top: 0;

@@ -6,9 +6,8 @@
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    background: none;
+    padding-top: 55px;
+    padding-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,11 +23,23 @@
   border-bottom: 1px solid var(--additional-accent);
 
   @media (min-width: $tablet-width) {
+    width: 140px;
     margin: 0;
     padding: 0;
+    border: none;
   }
 }
 
 .page-footer-social {
   border-bottom: 1px solid var(--additional-accent);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
