@@ -22,8 +22,8 @@
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 27px 53px 52px;
+    margin-bottom: 30px;
+    padding: 77px 61px 53px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +34,10 @@
 
 .options__item:last-child {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .options__title {
@@ -58,14 +62,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+
     &::before {
       content: "";
       width: 0;
       height: 0;
     }
 
-    padding-top: 77px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 36px;
 
@@ -113,9 +118,8 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 377px;
     padding: 0;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -139,14 +143,20 @@
   color: var(--header-font);
 
   @media (min-width: $tablet-width) {
-    width: 155px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 0;
     font-size: 20px;
     line-height: 30px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
+  }
+}
+
+.options__link-icon,
+.options__link {
+  &:active {
+    opacity: 0.3;
   }
 }
