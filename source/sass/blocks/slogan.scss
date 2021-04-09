@@ -13,15 +13,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding-left: 110px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min min min 1fr;
   }
 }
 
 .slogan__title {
-  width: 60%;
   margin-top: 27px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -34,7 +31,6 @@
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
-    margin-left: 83px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,8 +49,8 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     margin-bottom: 49px;
-    margin-left: 83px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -72,15 +68,33 @@
   background:
     url("../../img/background/opasity-restangle.png") no-repeat 50% 50%,
     url("../../img/background/cat-background.png") 50% 50% no-repeat;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 709px;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
     grid-row: 1 / 3;
+  }
+}
+
+.slogan__image {
+  display: block;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+
+    height: 609px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 499px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
   }
 }
 
@@ -98,7 +112,6 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
-    width: 720px;
     height: 694px;
     background:
       url("../../img/desktop/rectangle-desktop.png") no-repeat,
@@ -110,28 +123,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    margin-top: 29px;
-    margin-left: 83px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     grid-row: 3 / 4;
-  }
-}
-
-.slogan__image {
-  display: block;
-  height: 270px;
-
-  @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 552px;
-    height: 499px;
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
   }
 }

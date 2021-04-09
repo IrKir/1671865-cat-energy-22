@@ -4,7 +4,6 @@
   background-color: var(--additional-grayish);
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding: 0;
     background-color: none;
   }
@@ -40,7 +39,6 @@
 
 .example__text {
   margin-bottom: 25px;
-  width: 280px;
   font-family: var(--basic-font), sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -48,7 +46,6 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     margin-left: 30px;
     font-size: 16px;
     line-height: 24px;
@@ -62,6 +59,8 @@
 }
 
 .example__list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,10 +68,11 @@
 }
 
 .example__item {
+  display: flex;
+  flex-direction: column;
   width: 124px;
-  padding-top: 14px;
-  padding-bottom: 17px;
   border: 1px solid var(--additional-light);
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -80,13 +80,28 @@
   }
 }
 
+.example__item--position {
+  width: 280px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 42px;
+  padding: 0;
+  border: none;
+}
+
+
 .example__key {
+  width: 87px;
+  padding: 8px 5px;
   font-family: var(--basic-font), sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   text-align: center;
   color: var(--basic-text-color);
+  background-color: var(--additional-grayish);
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -94,7 +109,17 @@
   }
 }
 
+.example__key--position {
+  width: 135px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: var(--accent-font), sans-serif;
+  color: var(--header-font);
+}
+
 .example__definition {
+  order: -1;
   margin: 0;
   padding: 0;
   font-family: var(--accent-font), sans-serif;
@@ -111,23 +136,8 @@
   }
 }
 
-.example__item:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 26px;
-  margin-bottom: 42px;
-  width: 280px;
-  font-family: var(--basic-font), sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: var(--basic-text-color);
-  border: none;
-}
-
-.example__key:last-of-type {
+.example__definition--position {
+  order: 0;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -136,16 +146,11 @@
   color: var(--header-font);
 }
 
-.example__image {
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 620px;
-    margin: 0;
-    padding: 0;
-  }
+.example__item:first-child {
+  margin-left: 0;
 }
 
-.example-wrap {
+.example__buttons-wrap {
   display: flex;
   justify-content: space-between;
   padding-top: 23px;

@@ -14,4 +14,13 @@
   color: var(--accent-text-color);
   background-color: var(--basic-accent);
   border: none;
+
+  &:hover,
+  &:active {
+    background-color: var(--link-hover);
+  }
+
+  &:active {
+    color: var(--link-pressed-font);
+  }
 }
