@@ -1,8 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
@@ -11,8 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 59px 110px 56px;
+    padding: 57px 0;
   }
 }
 
@@ -40,6 +35,13 @@
 
 .page-footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
