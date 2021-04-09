@@ -86,7 +86,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
-
     height: 609px;
     text-align: center;
   }
@@ -106,7 +105,9 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+    grid-column: 1 / 2;
     grid-row: 3 / 5;
+    margin-top: -40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -121,8 +122,6 @@
 
 .slogan__link {
   @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 244px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin-top: 0;
