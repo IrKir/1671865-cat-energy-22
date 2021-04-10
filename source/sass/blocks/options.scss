@@ -1,6 +1,7 @@
 .options {
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-top: 82px;
   }
 }
 
@@ -10,6 +11,7 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
+    margin-top: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,6 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 45px;
     width: 570px;
     padding: 47px 51px 55px 52px;
   }
@@ -36,6 +40,7 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     margin-bottom: 45px;
   }
 }
@@ -86,6 +91,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     padding-bottom: 73px;
 
     &::after {
