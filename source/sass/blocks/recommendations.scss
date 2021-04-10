@@ -1,5 +1,9 @@
 .recommendations {
   border-bottom: 1px solid var(--additional-lightaccent);
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+  }
 }
 
 .recommendations__title {
