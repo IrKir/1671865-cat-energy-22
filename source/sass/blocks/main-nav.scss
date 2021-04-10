@@ -16,6 +16,8 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -33,6 +35,11 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__link {
@@ -45,7 +52,6 @@
 }
 
 .main-nav__toggle {
-  border: 1px solid red;
   width: 24px;
   height: 18px;
   cursor: pointer;
