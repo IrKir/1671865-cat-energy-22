@@ -41,18 +41,30 @@
   text-transform: uppercase;
   border-top: 1px solid var(--additional-lightaccent);
 
-  @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
-    border: none;
-    padding-top: 0;
-    padding-bottom: 12px;
+  &:hover {
+    color: grey;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
+  &:focus {
+    color: blue;
   }
+
+  &:active {
+    color: var(--header-font);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+
+@media (min-width: $desktop-width) {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .main-nav__link {
