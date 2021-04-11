@@ -5,8 +5,8 @@
   background-color: var(--accent-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 440px;
     min-height: 36px;
+    margin: 0;
   }
 }
 
@@ -42,7 +42,7 @@
   border-top: 1px solid var(--additional-lightaccent);
 
   &:hover {
-    color: grey;
+    color: var();
   }
 
   &:focus {
@@ -52,19 +52,19 @@
   &:active {
     color: var(--header-font);
   }
-}
 
-@media (min-width: $tablet-width) {
-  font-size: 18px;
-  line-height: 24px;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 12px;
-}
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 12px;
+  }
 
-@media (min-width: $desktop-width) {
-  font-size: 20px;
-  line-height: 30px;
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__link {
@@ -87,6 +87,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;

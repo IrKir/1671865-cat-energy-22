@@ -23,4 +23,11 @@
   &:active {
     color: var(--link-pressed-font);
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+  }
 }
