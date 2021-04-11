@@ -65,12 +65,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    width: 366px;
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 }
@@ -79,8 +79,6 @@
   display: flex;
   flex-direction: column;
   width: 124px;
-  border: 1px solid var(--additional-light);
-  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -107,7 +105,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width: 327px;
+    width: 340px;
     font-size: 20px;
     line-height: 20px;
     margin: 0;
@@ -116,7 +114,7 @@
   @media (min-width: $desktop-width) {
     width: 327px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 75px;
   }
@@ -124,6 +122,7 @@
 
 .example__key {
   width: 87px;
+  margin-top: -15px;
   padding: 8px 5px;
   font-family: var(--basic-font), sans-serif;
   font-size: 12px;
@@ -134,24 +133,38 @@
   background-color: var(--additional-grayish);
 
   @media (min-width: $tablet-width) {
+    width: 142px;
+    margin-top: -17px;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 114px;
   }
 }
 
 .example__key--position {
   width: 135px;
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   font-family: var(--accent-font), sans-serif;
   color: var(--header-font);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 200px;
+    font-size: 20px;
+  }
 }
 
 .example__definition {
   order: -1;
   margin: 0;
-  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 16px;
   font-family: var(--accent-font), sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -159,8 +172,12 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--header-font);
+  border: 1px solid var(--additional-light);
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -168,12 +185,20 @@
 
 .example__definition--position {
   order: 0;
+  margin: 0;
+  padding: 0;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--header-font);
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 90px;
+    font-size: 20px;
+  }
 }
 
 .example__item:first-child {
