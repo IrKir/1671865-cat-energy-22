@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header page__leveler">
-      <div class="identity page-header__identity">
+    <header class="page-header">
+      <div class="identity page__leveler page-header__identity">
         <a class="identity__mark">
           <img src="img/logo/logo-cat-mobile.png" width="33" height="38" alt="Логотип Cat energy">
         </a>
@@ -17,7 +17,7 @@
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button hidden class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -54,17 +54,19 @@
             <h3 class="options__title options__title--slim">Похудение</h3>
             <!--<img class="options__image" src="img/icons/cat_sit.svg" width="50" height="53" alt="Иконочное изображение сидящего кота">-->
             <p class="options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="options__link" href="catalog.hnml">каталог slim &nbsp;&nbsp;&nbsp;<svg class="options__link-icon" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"/>
-              <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"/>
-            </svg>
-          </a>
+            <a class="options__link" href="catalog.hnml">каталог slim &nbsp;&nbsp;&nbsp;
+              <svg class="options__link-icon" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"/>
+                <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"/>
+              </svg>
+            </a>
           </li>
           <li class="options__item page__leveler">
             <h3 class="options__title options__title--pro">Набор массы</h3>
             <!--<img class="options__image" src="img/icons/cat_went.svg" width="50" height="53" alt="Иконочное изображение идущего кота">-->
             <p class="options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="options__link" href="catalog.hnml">каталог pro &nbsp;&nbsp;&nbsp;<svg class="options__link-icon" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="options__link" href="catalog.hnml">каталог pro &nbsp;&nbsp;&nbsp;
+              <svg class="options__link-icon" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2"/>
                 <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black"/>
               </svg>
@@ -93,42 +95,42 @@
       <section class="example">
         <h2 class="visually-hidden">Пример использования корма для похудения</h2>
         <div class="example__no-wrap page__leveler">
-        <div class="example__wrap page__leveler">
-          <h3 class="example__title page__leveler">Живой пример</h3>
-          <p class="example__text  page__leveler">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__list page__leveler">
-            <div class="example__item page__leveler">
-              <dt class="example__key page__leveler">снижение веса</dt>
-              <dd class="example__definition">5 кг</dd>
+          <div class="example__wrap page__leveler">
+            <h3 class="example__title page__leveler">Живой пример</h3>
+            <p class="example__text  page__leveler">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__list page__leveler">
+              <div class="example__item page__leveler">
+                <dt class="example__key page__leveler">снижение веса</dt>
+                <dd class="example__definition">5 кг</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__key page__leveler">затрачено времени</dt>
+                <dd class="example__definition">60 дней</dd>
+              </div>
+              <div class="example__item example__item--position page__leveler">
+                <dt class="example__key example__key--position">затраты на питание:&nbsp;</dt>
+                <dd class="example__definition example__definition--position">15 000 руб.</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="example__image-buttons">
+            <div class="example__image-wrap page__leveler">
+              <img class="example__image" src="img/before-mobile.png" width="311" height="232" alt="Очень толстый кот сидит и грустно смотрит">
             </div>
-            <div class="example__item">
-              <dt class="example__key page__leveler">затрачено времени</dt>
-              <dd class="example__definition">60 дней</dd>
+            <div class="example__buttons-wrap page__leveler">
+              <button class="example__button example__button--before" type="button">Было</button>
+              <div class="example__toggle"></div>
+              <button class="example__button example__button--after" type="button">Стало</button>
             </div>
-            <div class="example__item example__item--position page__leveler">
-              <dt class="example__key example__key--position">затраты на питание:&nbsp;</dt>
-              <dd class="example__definition example__definition--position">15 000 руб.</dd>
-            </div>
-          </dl>
+          </div>
         </div>
-        <div class="example__image-buttons">
-        <div class="example__image-wrap page__leveler">
-          <img class="example__image" src="img/before-mobile.png" width="311" height="232" alt="Очень толстый кот сидит и грустно смотрит">
-        </div>
-          <div class="example__buttons-wrap page__leveler">
-          <button class="example__button example__button--before" type="button">Было</button>
-          <div class="example__toggle"></div>
-          <button class="example__button example__button--after" type="button">Стало</button>
-        </div>
-      </div>
-    </div>
-    </section>
-     <section class="contacts page__leveler">
+      </section>
+      <section class="contacts page__leveler">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__invitation">
           <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+              Санкт-Петербург</p>
         </div>
         <iframe src="" class="contacts__freim" align="center">
           <!--<img class="contacts__image" src="img/location.jpg" width="320" height="362" alt="Карта с местоположением компании, отмеченным точкой">-->
