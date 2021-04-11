@@ -4,7 +4,7 @@
   align-items: center;
   height: 38px;
 
-  @media (width: $tablet-width) {
-    width: 180px;
+  @media (min-width: $tablet-width) {
+    width: 174px;
   }
 }
