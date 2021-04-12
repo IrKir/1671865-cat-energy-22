@@ -29,7 +29,9 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-left: 83px;
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 60px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
@@ -52,9 +54,8 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-left: 83px;
-    margin-bottom: 49px;
+    width: 708px;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 20px;
   }
@@ -76,6 +77,7 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     background: none;
   }
 
