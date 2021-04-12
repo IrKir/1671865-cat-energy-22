@@ -8,6 +8,10 @@
     min-height: 36px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
 }
 
 .main-nav__list {
@@ -32,40 +36,19 @@
 }
 
 .main-nav__item {
-  width: 280px;
   padding-top: 22px;
   padding-bottom: 24px;
-  font-family: var(--accent-font), sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
   border-top: 1px solid var(--additional-lightaccent);
 
-  &:hover {
-    color: var();
-  }
-
-  &:focus {
-    color: blue;
-  }
-
-  &:active {
-    color: var(--header-font);
-  }
-
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 24px;
     border: none;
-    padding-top: 0;
-    padding-bottom: 12px;
+    padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  /*@media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-  }
+  }*/
 }
 
 .main-nav__link {
@@ -73,8 +56,48 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--header-font);
   text-decoration: none;
+
+  &:hover {
+    color: var(--catalog-hover);
+  }
+
+  &:active {
+    padding-bottom: 8px;
+    color: var(--header-font);
+    border-bottom: 2px solid var(--basic-accent);
+  }
+
+  &[aria-current="page"] {
+    color: var(--catalog-current);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--accent-text-color);
+
+    &:hover {
+      color: var(--dsct-catalog-hover);
+    }
+
+    &:active {
+      padding-bottom: 8px;
+      color: var(--accent-text-color);
+      border-bottom: 2px solid var(--accent-text-color);
+    }
+
+    &[aria-current="page"] {
+      color: var(--dsct-catalog-current);
+    }
+  }
 }
 
 .main-nav__toggle {
