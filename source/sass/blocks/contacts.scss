@@ -1,8 +1,8 @@
 .contacts {
   width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     padding-top: 0;
   }
 
@@ -64,24 +64,8 @@
   }
 }
 
-.contacts--color {
-  background-color: var(--additional-darkaccent);
-}
-
-.contacts__image {
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    height: 400px;
-  }
-}
-
 .contacts__freim {
+  margin: 0 auto;
   width: 320px;
   height: 362px;
 
