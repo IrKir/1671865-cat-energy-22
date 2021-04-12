@@ -1,4 +1,37 @@
 .slogan {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    z-index: -1;
+    background:
+      linear-gradient(var(--filter-color), var(--filter-color)),
+      url("../../img/background/cat-background.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover, cover;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      content: inherit;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      height: 694px;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.slogan__main-wrap {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min min 1fr 1fr min;
@@ -13,14 +46,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 535px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min min min 1fr;
-    margin-top: -155px;
   }
 }
 
 .slogan__title {
-  margin-top: 27px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   font-family: var(--accent-font), sans-serif;
@@ -29,8 +61,8 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
+    width: 414px;
+    margin-left: 88px;
     margin-top: 60px;
     margin-bottom: 41px;
     font-size: 60px;
@@ -39,8 +71,7 @@
 
   @media (min-width: $desktop-width) {
     width: 420px;
-    margin: 0;
-    margin-left: 110px;
+    margin-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -52,39 +83,20 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
+    width: 300px;
+    margin: 0;
+    margin-left: 88px;
+    margin-bottom: 49px;
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 285px;
-    margin-left: 110px;
     margin-bottom: 52px;
-  }
-}
-
-.slogan__decor {
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-  height: 302px;
-  background:
-    url("../../img/background/opasity-restangle.png") no-repeat 50% 50%,
-    url("../../img/background/cat-background.png") 50% 50% no-repeat;
-  background-size: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 255px;
-    width: 720px;
-    grid-row: 1 / 3;
   }
 }
 
@@ -94,42 +106,21 @@
   height: 270px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    margin-top: -25px;
     padding: 0;
     height: 609px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
     height: 499px;
     grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    margin-top: 141px;
-    margin-left: -135px;
-  }
-}
-
-.slogan__wrap {
-  height: 270px;
-  grid-column: 1 / 2;
-  grid-row: 3 / 5;
-
-  @media (min-width: $tablet-width) {
-    width: 709px;
-    height: 609px;
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    margin-top: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    order: 2;
-    grid-column: 2 / 3;
-    grid-row: 1 / 5;
-    height: 694px;
-    background:
-      url("../../img/desktop/rectangle-desktop.png") no-repeat,
-      url("../../img/desktop/cat-desktop.png") no-repeat;
+    grid-row: 2 / 5;
+    margin-top: -300px;
+    margin-right: 200px;
   }
 }
 
@@ -139,12 +130,11 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin: 0;
-    margin-left: 83px;
+    margin-left: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
-    margin-left: 110px;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
+    margin-left: 80px;
   }
 }
