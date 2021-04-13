@@ -9,7 +9,6 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 668px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -21,7 +20,7 @@
 
 .common__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
@@ -47,6 +46,7 @@
 }
 
 .common__label {
+  margin-right: 13px;
   padding: 13px 0 14px;
 
   @media (min-width: $tablet-width) {
@@ -63,14 +63,25 @@
   text-transform: uppercase;
   color: var(--basic-text-color);
   border: 1px solid var(--additional-accent-grayish);
+  outline: none;
+
+  &:hover {
+    border: 1px solid var(--additional-light);
+  }
+
+  &:focus {
+    border: 1px solid var(--basic-text-color);
+  }
+
+  &:invalid {
+    border: 1px solid var(--error);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 0 12px 19px;
-    width: 500px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 20px;
-    width: 436px;
   }
 }
