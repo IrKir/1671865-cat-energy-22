@@ -49,14 +49,6 @@
   border: 1px solid var(--additional-light);
   border-radius: 50%;
 
-  &:hover {
-    border: 1px solid var(--radio-hover);
-  }
-
-  &:disabled {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     content: "";
     top: 0;
@@ -83,6 +75,14 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.radio__input:hover + .radio__label::before {
+  border: 1px solid var(--radio-hover);
+}
+
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
 }
 
 .radio__label {
