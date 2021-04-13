@@ -63,27 +63,80 @@
 }
 
 .owner-contacts__subtitle {
-  margin: 0;
+  position: relative;
   margin-top: 26px;
   margin-bottom: 35px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 24px;
+    left: 201px;
+    width: 99px;
+    height: 2px;
+    border-top: 2px solid var(--basic-accent);
+  }
+
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 512px;
     margin-top: 75px;
     margin-bottom: 76px;
-    padding-left: 40px;
+    margin-left: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: 554px;
+      width: 145px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -70px;
+      width: 30px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 40px;
     margin-top: 69px;
     margin-bottom: 76px;
     padding-left: 0;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+
+      width: 778px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -110px;
+      width: 70px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
   }
 }
 
 .owner-contacts__input {
+  position: relative;
   width: 219px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
@@ -103,5 +156,20 @@
   @media (min-width: $desktop-width) {
     width: 486px;
     padding: 10px 0 10px 21px;
+  }
+}
+
+.owner-contacts__input-email {
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    width: 18px;
+    height: 13px;
+    background: url("../../img/icons/letter.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }

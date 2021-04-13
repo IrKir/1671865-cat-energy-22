@@ -1,6 +1,8 @@
 .addition {
   width: 280px;
   border: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -12,18 +14,69 @@
 }
 
 .addition__subtitle {
+  position: relative;
   margin-top: 23px;
   margin-bottom: 38px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 164px;
+    width: 136px;
+    height: 2px;
+    border-top: 2px solid var(--basic-accent);
+  }
+
   @media (min-width: $tablet-width) {
-    width: 220px;
+    width: 211px;
     margin-left: 40px;
     margin-top: 65px;
     margin-bottom: 57px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: 252px;
+      width: 446px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -70px;
+      width: 30px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: 252px;
+      width: 1076px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -110px;
+      width: 30px;
+      height: 2px;
+      border-top: 2px solid var(--basic-accent);
+    }
   }
 }
 
@@ -55,6 +108,8 @@
 }
 
 .addition__item {
+  padding: 0;
+  margin: 0;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
@@ -117,6 +172,8 @@
 }
 
 .addition__button {
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     width: 282px;
     flex-wrap: wrap;
