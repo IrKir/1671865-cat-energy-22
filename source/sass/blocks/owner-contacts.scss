@@ -145,6 +145,19 @@
   text-transform: uppercase;
   padding: 12px 0 12px 15px;
   color: var(--basic-text-color);
+  border: 1px solid var(--additional-accent-grayish);
+
+  &:hover {
+    border: 1px solid var(--additional-light);
+  }
+
+  &:focus {
+    border: 1px solid var(--basic-text-color);
+  }
+
+  &:invalid {
+    border: 1px solid var(--error);
+  }
 
   @media (min-width: $tablet-width) {
     width: 535px;
@@ -159,17 +172,48 @@
   }
 }
 
-.owner-contacts__input-email {
-  &::after {
+.owner-contacts__letter {
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
-    z-index: -1;
-    top: 5px;
-    left: 5px;
-    width: 18px;
-    height: 13px;
+    top: -6px;
+    right: 20px;
+    width: 25px;
+    height: 15px;
     background: url("../../img/icons/letter.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 30px;
+      background: url("../../img/icons/letter-dct.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.owner-contacts__phone {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url("../../img/icons/phone.svg");
+
+    @media (min-width: $tablet-width) {
+      right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 20px;
+    }
   }
 }
