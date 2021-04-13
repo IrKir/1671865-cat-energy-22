@@ -1,5 +1,8 @@
 .page-main__title {
-  margin: 28px 20px 37px;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 37px;
   font-family: var(--accent-font), sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -8,14 +11,16 @@
   color: var(header-font);
 
   @media (min-width: $tablet-width) {
-    margin-left: 69px;
+    width: 708px;
+    padding-left: 40px;
     margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    width: 1220px;
+    padding: 0;
     margin-bottom: 56px;
   }
 }
