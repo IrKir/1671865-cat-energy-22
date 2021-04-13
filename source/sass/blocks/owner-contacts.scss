@@ -151,25 +151,39 @@
     border: 1px solid var(--additional-light);
   }
 
-  &:focus {
-    border: 1px solid var(--basic-text-color);
-  }
-
   &:invalid {
     border: 1px solid var(--error);
   }
 
-  @media (min-width: $tablet-width) {
-    width: 535px;
-    font-size: 20px;
-    line-height: 30px;
-    padding: 10px 0 10px 21px;
-  }
+  &:focus {
+    border: 1px solid var(--basic-text-color);
 
-  @media (min-width: $desktop-width) {
-    width: 486px;
-    padding: 10px 0 10px 21px;
+    .owner-contacts__letter {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: 20px;
+        width: 25px;
+        height: 15px;
+        background: url("../../img/icons/letter-focus.svg");
+      }
+    }
   }
+}
+
+@media (min-width: $tablet-width) {
+  width: 535px;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px 0 10px 21px;
+}
+
+@media (min-width: $desktop-width) {
+  width: 486px;
+  padding: 10px 0 10px 21px;
 }
 
 .owner-contacts__letter {
