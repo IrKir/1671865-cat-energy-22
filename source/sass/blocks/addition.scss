@@ -1,16 +1,6 @@
 .addition {
-  width: 280px;
   border: none;
   padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
 }
 
 .addition__subtitle {
@@ -110,10 +100,16 @@
 .addition__item {
   padding: 0;
   margin: 0;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding-left: 46px;
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     width: 284px;
+    height: 42px;
+    padding-left: 59px;
     margin-bottom: 37px;
   }
 
@@ -132,6 +128,54 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 66px;
+  }
+}
+
+.addition__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.addition__input + .addition__label::before {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: -5px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--additional-light);
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+    top: -6px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.addition__input:hover + .addition__label::before {
+  border: 2px solid var(--radio-hover);
+}
+
+.addition__input:disabled + .addition__label {
+  opacity: 0.3;
+}
+
+.addition__input:checked + .addition__label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 2px;
+  width: 18px;
+  height: 14px;
+  background: url("../../img/icons/check-mark.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: -45px;
+    top: 6px;
   }
 }
 
@@ -176,6 +220,7 @@
 
   @media (min-width: $tablet-width) {
     width: 282px;
+    justify-content: center;
     flex-wrap: wrap;
     margin-right: 61px;
   }
