@@ -16,7 +16,6 @@
 
 .owner-contacts__wrapper {
   position: relative;
-  height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +29,6 @@
 
   @media (min-width: $tablet-width) {
     width: 632px;
-    height: 52px;
     margin-left: 40px;
     margin-bottom: 20px;
     font-size: 20px;
