@@ -15,6 +15,7 @@
 }
 
 .owner-contacts__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,16 +28,17 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding-left: 40px;
+    width: 632px;
+    margin-left: 40px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 569px;
+    width: 570px;
     padding-left: 0;
+    margin-left: 0;
     margin-bottom: 67px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -135,6 +137,10 @@
   }
 }
 
+.owner-contacts__label {
+  min-width: fit-content;
+}
+
 .owner-contacts__input {
   position: relative;
   width: 219px;
@@ -162,21 +168,23 @@
   &:focus {
     border: 1px solid var(--basic-text-color);
   }
-}
 
-@media (min-width: $tablet-width) {
-  width: 535px;
-  font-size: 20px;
-  line-height: 30px;
-  padding: 10px 0 10px 21px;
-}
+  @media (min-width: $tablet-width) {
+    width: 551px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0 10px 21px;
+  }
 
-@media (min-width: $desktop-width) {
-  width: 486px;
-  padding: 10px 0 10px 21px;
+  @media (min-width: $desktop-width) {
+    width: 486px;
+    padding: 10px 0 10px 21px;
+  }
 }
 
 .owner-contacts__icon {
+  position: absolute;
+  right: 10px;
   width: 25px;
   height: 25px;
   background: var(--addition-text-color);
@@ -185,6 +193,7 @@
 }
 
 .owner-contacts__icon--letter {
+  top: 13px;
   --icon: url("../../img/icons/letter.svg");
 }
 
