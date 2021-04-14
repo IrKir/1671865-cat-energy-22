@@ -47,15 +47,17 @@
 
 .common__label {
   min-width: fit-content;
-  margin-right: 13px;
+  margin-right: 9px;
   padding: 13px 0 14px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 14px;
     padding: 10px 0 12px;
   }
 }
 
 .common__input {
+  flex-grow: 1;
   padding: 13px 0 14px 15px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
