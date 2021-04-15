@@ -25,15 +25,14 @@
   }
 }
 
-.page-main__title-catalog {
-  margin: 0;
+.page-main__title--catalog {
   margin-top: 27px;
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    padding: 0;
     margin-top: 65px;
-    margin-bottom: 91px;
+    margin-bottom: 146px;
   }
 
   @media (min-width: $desktop-width) {
