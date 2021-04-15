@@ -1,5 +1,4 @@
 .contacts {
-  position: relative;
   background-color: var(--additional-darkaccent);
 
   @media (min-width: $tablet-width) {
@@ -8,8 +7,11 @@
 }
 
 .contacts__invitation {
+  position: relative;
+}
+
+.contacts__invitation-wrap {
   margin: 0 auto;
-  width: 280px;
   padding-top: 28px;
   padding-bottom: 28px;
   display: flex;
@@ -17,7 +19,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 667px;
+    width: 625px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +30,7 @@
     padding-bottom: 51px;
     padding-left: 76px;
     top: 95px;
-    left: 110px;
+    left: 0;
     background-color: var(--accent-text-color);
   }
 }
@@ -109,4 +111,3 @@
     background-size: cover, 1440px 400px;
   }
 }
-
