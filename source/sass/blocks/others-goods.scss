@@ -110,16 +110,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 32px;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }
 
 .others-goods__item:last-child {
   border-bottom: 1px solid var(--additional-light);
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
 }
 
 .others-goods__name {
@@ -180,11 +177,17 @@
 }
 
 .others-goods__link {
+  font-size: 14px;
+  line-height: 18px;
+
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 18px;
     width: 632px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 11px 26px;
     width: 244px;
   }
 }
