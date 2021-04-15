@@ -73,19 +73,46 @@
   }
 }
 
+.contacts__address span {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.contacts__wrap {
+  background: linear-gradient(var(--filter-color), var(--filter-color));
+}
+
 .contacts__freim {
   display: block;
   margin: 0 auto;
   width: 320px;
   height: 362px;
+  background: url("../../img/location.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
+    background: url("../../img/tablet/location-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
+    background: url("../../img/desktop/Map.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
   }
 }
+
