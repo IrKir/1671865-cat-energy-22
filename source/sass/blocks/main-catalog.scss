@@ -146,9 +146,12 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 168px;
+    padding: 11px 26px;
   }
 }
