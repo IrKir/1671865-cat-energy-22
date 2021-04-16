@@ -69,14 +69,12 @@
     padding: 0;
 
     &::after {
-      content: inherit;
+      content: initial;
     }
   }
 }
 
 .main-nav__item--index:first-child {
-  position: relative;
-
   &::before {
     position: absolute;
     content: "";
@@ -84,7 +82,7 @@
     height: 1px;
     left: 0;
     right: 0;
-    bottom: 0;
+    top: 0;
     background-color: var(--additional-lightaccent);
     box-shadow:
       -100px 0 0 0 var(--additional-lightaccent),
@@ -93,6 +91,12 @@
       100px 0 0 0 var(--additional-lightaccent),
       200px 0 0 0 var(--additional-lightaccent),
       300px 0 0 0 var(--additional-lightaccent);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: initial;
+    }
   }
 }
 
