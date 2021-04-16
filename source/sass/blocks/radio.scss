@@ -1,29 +1,35 @@
 .radio {
-  display: flex;
-  flex-direction: column;
-  padding-top: 22px;
-  padding-bottom: 19px;
+  padding-top: 23px;
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-text-color);
-  border-top: 1px solid var(--additional-accent);
-  border-bottom: 1px solid var(--additional-accent);
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid var(--additional-accent);
+  }
 
   @media (min-width: $tablet-width) {
     width: 630px;
     padding: 25px 27px;
     font-size: 20px;
     line-height: 30px;
-    border-top: 1px solid var(--additional-accent);
-    border-bottom: 1px solid var(--additional-accent);
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     border: none;
+
+    &::after {
+      border-top: none;
+    }
   }
 }
 
@@ -32,11 +38,15 @@
   align-items: center;
   position: relative;
   height: 30px;
-  margin-bottom: 13px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     height: 40px;
   }
+}
+
+.radio__wrapper:last-child {
+  margin-bottom: 24px;
 }
 
 .radio__input + .radio__label::before {

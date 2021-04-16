@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    background-color: var(--accent-text-color);
   }
 }
 
@@ -20,6 +21,8 @@
 
   @media (min-width: $tablet-width) {
     width: 625px;
+    padding-top: 66px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
