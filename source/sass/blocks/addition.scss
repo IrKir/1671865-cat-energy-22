@@ -5,6 +5,9 @@
 
 .addition__subtitle {
   position: relative;
+  display: flex;
+  justify-content: stretch;
+  width: 280px;
   margin-top: 23px;
   margin-bottom: 38px;
 
@@ -19,30 +22,24 @@
   }
 
   &::after {
-    position: absolute;
+    flex-grow: 1;
     content: "";
-    top: 14px;
-    left: 164px;
-    width: 400px;
-    height: 2px;
-    border-top: 2px solid var(--basic-accent);
+    width: 99px;
+    height: 1px;
+    margin-top: 14px;
+    background-color: var(--basic-accent);
+    box-shadow: 20px 0 0 var(--basic-accent),
+      80px 0 0 var(--basic-accent),
+      140px 0 0 var(--basic-accent),
+      200px 0 0 var(--basic-accent),
+      260px 0 0 var(--basic-accent);
   }
 
   @media (min-width: $tablet-width) {
-    width: 211px;
+    width: 668px;
     margin-left: 40px;
     margin-top: 65px;
     margin-bottom: 57px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      left: 252px;
-      width: 1000px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
-    }
 
     &::before {
       position: absolute;
@@ -53,20 +50,23 @@
       height: 2px;
       border-top: 2px solid var(--basic-accent);
     }
+
+    &::after {
+      flex-grow: 1;
+      content: "";
+      width: 145px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow:
+        144px 0 0 var(--basic-accent),
+        288px 0 0 var(--basic-accent),
+        432px 0 0 var(--basic-accent);
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      left: 252px;
-      width: 1700px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
-    }
+    width: 1220px;
 
     &::before {
       position: absolute;
@@ -76,6 +76,15 @@
       width: 600px;
       height: 2px;
       border-top: 2px solid var(--basic-accent);
+    }
+
+    &::after {
+      flex-grow: 1;
+      content: "";
+      width: 650px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow: 650px 0 0 var(--basic-accent);
     }
   }
 }

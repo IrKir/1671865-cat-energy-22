@@ -1,6 +1,8 @@
 .others-goods__subtitle {
   position: relative;
   width: 280px;
+  display: flex;
+  justify-content: stretch;
   margin: 0;
   padding: 0;
   margin-top: 25px;
@@ -9,13 +11,17 @@
   line-height: 24px;
 
   &::after {
-    position: absolute;
+    flex-grow: 1;
     content: "";
-    top: 14px;
-    left: 247px;
-    width: 400px;
-    height: 2px;
-    border-top: 2px solid var(--basic-accent);
+    width: 50px;
+    height: 1px;
+    margin-top: 18px;
+    background-color: var(--basic-accent);
+    box-shadow: 50px 0 0 var(--basic-accent),
+      100px 0 0 var(--basic-accent),
+      150px 0 0 var(--basic-accent),
+      200px 0 0 var(--basic-accent),
+      250px 0 0 var(--basic-accent);
   }
 
   &::before {
@@ -29,20 +35,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 338px;
+    width: 668px;
     margin-left: 68px;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
-      position: absolute;
+      flex-grow: 1;
       content: "";
-      top: 18px;
-      left: 374px;
-      width: 1000px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
+      width: 145px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow:
+        144px 0 0 var(--basic-accent),
+        288px 0 0 var(--basic-accent),
+        432px 0 0 var(--basic-accent);
     }
 
     &::before {
@@ -59,15 +67,15 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
     margin-left: 0;
+    width: 1220px;
 
     &::after {
-      position: absolute;
+      flex-grow: 1;
       content: "";
-      top: 18px;
-      left: 374px;
-      width: 1700px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
+      width: 650px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow: 650px 0 0 var(--basic-accent);
     }
 
     &::before {
@@ -197,7 +205,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 20px;
-    padding: 9px 26px 10px;
+    padding: 9px 26px ;
     width: 244px;
   }
 }

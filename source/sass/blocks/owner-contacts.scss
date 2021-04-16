@@ -69,7 +69,7 @@
   display: flex;
   justify-content: stretch;
   position: relative;
-  margin-top: 26px;
+  padding-top: 26px;
   margin-bottom: 35px;
 
   &::after {
@@ -89,41 +89,45 @@
   &::before {
     position: absolute;
     content: "";
-    top: 18px;
     left: -320px;
     width: 300px;
     height: 2px;
+    top: 42px;
     border-top: 2px solid var(--basic-accent);
   }
 
   @media (min-width: $tablet-width) {
     width: 668px;
-    margin-top: 75px;
-    margin-bottom: 76px;
+    padding: 0;
+    margin-top: 81px;
+    margin-bottom: 70px;
     margin-left: 40px;
 
     &::after {
       flex-grow: 1;
       content: "";
-      width: 10px;
+      width: 145px;
       height: 1px;
       margin-top: 18px;
-      background-color: var(--basic-accent);
-      box-shadow: none;
+      box-shadow:
+        144px 0 0 var(--basic-accent),
+        288px 0 0 var(--basic-accent),
+        432px 0 0 var(--basic-accent);
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 18px;
-      left: -390px;
-      width: 350px;
+      left: -340px;
+      width: 300px;
       height: 2px;
+      top: 18px;
       border-top: 2px solid var(--basic-accent);
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-left: 0;
     margin-right: 40px;
     margin-top: 69px;
@@ -133,12 +137,12 @@
     grid-row: 1 / 2;
 
     &::after {
-      position: absolute;
+      flex-grow: 1;
       content: "";
-      top: 18px;
-      width: 1700px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
+      width: 650px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow: 650px 0 0 var(--basic-accent);
     }
 
     &::before {
@@ -152,6 +156,7 @@
     }
   }
 }
+
 
 .owner-contacts__label {
   min-width: fit-content;
