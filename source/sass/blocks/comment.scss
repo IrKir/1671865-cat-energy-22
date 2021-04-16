@@ -11,6 +11,9 @@
 }
 
 .comment__subtitle {
+  width: 280px;
+  display: flex;
+  justify-content: stretch;
   position: relative;
   margin-bottom: 38px;
 
@@ -25,27 +28,22 @@
   }
 
   &::after {
-    position: absolute;
+    flex-grow: 1;
     content: "";
-    top: 14px;
-    left: 143px;
-    width: 400px;
-    height: 2px;
-    border-top: 2px solid var(--basic-accent);
+    width: 99px;
+    height: 1px;
+    margin-top: 14px;
+    background-color: var(--basic-accent);
+    box-shadow: 20px 0 0 var(--basic-accent),
+      80px 0 0 var(--basic-accent),
+      140px 0 0 var(--basic-accent),
+      200px 0 0 var(--basic-accent),
+      260px 0 0 var(--basic-accent);
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      left: 219px;
-      width: 1000px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
-    }
+    width: 668px;
 
     &::before {
       position: absolute;
@@ -56,21 +54,24 @@
       height: 2px;
       border-top: 2px solid var(--basic-accent);
     }
+
+    &::after {
+      flex-grow: 1;
+      content: "";
+      width: 145px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow:
+        144px 0 0 var(--basic-accent),
+        288px 0 0 var(--basic-accent),
+        432px 0 0 var(--basic-accent);
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-bottom: 76px;
     margin-left: 0;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 18px;
-      left: 219px;
-      width: 1700px;
-      height: 2px;
-      border-top: 2px solid var(--basic-accent);
-    }
 
     &::before {
       position: absolute;
@@ -79,7 +80,18 @@
       left: -640px;
       width: 600px;
       height: 2px;
-      border-top: 2px solid var(--basic-accent);
+    }
+
+    &::after {
+      flex-grow: 1;
+      content: "";
+      width: 145px;
+      height: 1px;
+      margin-top: 18px;
+      box-shadow:
+        144px 0 0 var(--basic-accent),
+        288px 0 0 var(--basic-accent),
+        432px 0 0 var(--basic-accent);
     }
   }
 }
