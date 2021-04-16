@@ -97,17 +97,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: 708px;
     padding: 0;
     margin-top: 81px;
     margin-bottom: 70px;
-    margin-left: 40px;
 
     &::after {
       flex-grow: 1;
       content: "";
       width: 145px;
       height: 1px;
+      margin-left: 40px;
       margin-top: 18px;
       box-shadow:
         144px 0 0 var(--basic-accent),
