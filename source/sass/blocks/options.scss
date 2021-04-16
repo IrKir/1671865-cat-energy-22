@@ -137,8 +137,9 @@
 
 .options__link {
   display: block;
-  margin: 0;
-  padding: 15px 0 18px 19px;
+  margin: 0 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
   border-top: 1px solid var(--additional-accent);
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
