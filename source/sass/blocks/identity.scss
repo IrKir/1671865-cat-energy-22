@@ -12,6 +12,9 @@
 }
 
 .identity__logo {
+  display: block;
+  margin-left: 56px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
