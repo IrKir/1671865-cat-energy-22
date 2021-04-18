@@ -96,6 +96,10 @@
   background-position: center, center;
   background-size: cover, 320px 362px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/location@2.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     height: 400px;
     background: linear-gradient(var(--filter-color), var(--filter-color)),
@@ -103,14 +107,22 @@
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover, 768px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/tablet/location-tablet@2.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
     background: linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/desktop/Map.png");
+      url("../../img/desktop/location-desktop.png");
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover, 1440px 400px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/desktop/location-desktop@2.jpg");
+    }
   }
 }

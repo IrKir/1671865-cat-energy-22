@@ -211,12 +211,12 @@
   height: 232;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: auto;
     height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
+    width: auto;
     height: 515px;
   }
 }
