@@ -43,7 +43,11 @@
             <h2 class="slogan__title">Функциональное<br>питание для котов</h2>
             <p class="slogan__text">Занялся собой? Займись котом!</p>
           </div>
-            <img class="slogan__image" src="img/can-mobile.png" alt="Красивая жёлто-оранжевая банка с кошачьим кормом со вкусом курицы">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/desktop/can-desktop.png 1x, img/desktop/can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet/can-tablet.png 1x, img/tablet/can-tablet@2x.png 2x">
+            <img class="slogan__image" src="img/can-mobile.png" width="280" height="270" srcset="img/can-mobile@2x.png" alt="Красивая жёлто-оранжевая банка с кошачьим кормом со вкусом курицы">
+          </picture>
           <a class="link slogan__link" href="form.html">Подобрать программу</a>
       </div>
       </section>
@@ -120,7 +124,11 @@
           </div>
           <div class="example__image-buttons">
             <div class="example__image-wrap">
-              <img class="example__image" src="img/before-mobile.png" width="311" height="232" alt="Очень толстый кот сидит и грустно смотрит">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/desktop/before-desktop.png 1x, img/desktop/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet/before-tablet.png 1x, img/tablet/before-tablet@2x.png 2x">
+                <img class="example__image" src="img/before-mobile.png" width="311" height="232" srcset="img/before-mobile@2.png 2x" alt="Очень толстый кот сидит и грустно смотрит">
+              </picture>
             </div>
             <div class="example__buttons-wrap">
               <button class="example__button example__button--before" type="button">Было</button>
