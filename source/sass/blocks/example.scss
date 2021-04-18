@@ -206,7 +206,7 @@
   margin-left: 0;
 }
 
-.example__image {
+.example__image-before {
   width: 311px;
   height: 232;
 
@@ -218,6 +218,20 @@
   @media (min-width: $desktop-width) {
     width: auto;
     height: 515px;
+  }
+}
+
+.example__image-after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 354px;
+    height: 607px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -33px;
   }
 }
 
@@ -236,8 +250,10 @@
 }
 
 .example__image-wrap {
+  display: flex;
+  justify-content: center;
+
   @media (min-width: $desktop-width) {
-    width: 610px;
     margin: 0;
   }
 }
