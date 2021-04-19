@@ -90,39 +90,34 @@
 
 .contacts__wrap {
   height: 362px;
-  background: linear-gradient(var(--filter-color), var(--filter-color)),
-    url("../../img/location.jpg");
+  background:
+    linear-gradient(var(--filter-color), var(--filter-color)),
+    var(--bg-map, url("../../img/location-mobile@1x.jpg"));
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover, 320px 362px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/location@2.jpg");
+    --bg-map: url("../../img/location-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background: linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/tablet/location-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center, center;
+    --bg-map: url("../../img/location-tablet@1x.png");
     background-size: cover, 768px 400px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tablet/location-tablet@2.jpg");
+      --bg-map: url("../../img/location-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
-    background: linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/desktop/location-desktop.png");
-    background-repeat: no-repeat;
-    background-position: center, center;
+    --bg-map: url("../../img/location-desktop@1x.png");
     background-size: cover, 1440px 400px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/desktop/location-desktop@2.jpg");
+      background-image: url("../../img/location-desktop@2x.png");
     }
   }
 }
