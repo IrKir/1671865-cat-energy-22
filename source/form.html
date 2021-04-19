@@ -10,7 +10,11 @@
       <header class="page-header">
         <div class="identity page-header__identity">
           <a class="identity__mark">
-            <img src="img/logo/logo-cat-mobile.png" width="33" height="38" alt="Логотип Cat energy">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-cat-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img class="identity__img" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
+            </picture>
           </a>
           <a class="identity__logo">
             <img src="img/logo-caption.svg" width="101" height="18" alt="Cat energy">
@@ -134,12 +138,9 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper page__leveler">
-        <div class="identity page-footer__identity">
-          <a class="identity__mark">
-            <img src="img/logo/logo-cat-mobile.png" width="33" height="38" alt="Логотип Cat energy">
-          </a>
-          <a class="identity__logo">
-            <img src="img/logo-caption.svg" width="101" height="18" alt="Cat energy">
+        <div class="page-footer__identity">
+          <a class="page-footer__mark">
+            <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat energy">
           </a>
         </div>
         <div class="social__wrapper page-footer-social">
