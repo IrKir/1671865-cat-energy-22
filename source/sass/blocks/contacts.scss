@@ -117,7 +117,7 @@
     background-size: cover, 1440px 400px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/location-desktop@2x.png");
+      --bg-map: url("../../img/location-desktop@2x.png");
     }
   }
 }
