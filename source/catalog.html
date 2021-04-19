@@ -8,7 +8,11 @@
       <header class="page-header">
         <div class="identity page-header__identity">
           <a class="identity__mark">
-            <img src="img/logo/logo-cat-mobile.png" width="33" height="38" alt="Логотип Cat energy">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-cat-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg">
+            <img class="identity__img" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
+            </picture>
           </a>
           <a class="identity__logo">
             <img src="img/logo-caption.svg" width="101" height="18" alt="Cat energy">
@@ -19,13 +23,13 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list main-nav__list-form" >
-            <li class="main-nav__item main-nav__item--active main-nav__item--index">
+            <li class="main-nav__item main-nav__item--index">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--index">
-              <a class="main-nav__link">Каталог продукции</a>
+              <a class="main-nav__link" href="">Каталог продукции</a>
             </li>
-            <li class="main-nav__item main-nav__item--index">
+            <li class="main-nav__item  main-nav__item--active main-nav__item--index">
               <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -40,8 +44,15 @@
         <h2 class="visually-hidden">Основной каталог</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item">
-            <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy PRO 500 г</h3></a>
-            <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-1.png" width="68" height="86" alt="Изображение малого жёлто-оранжевого пакета корма с курицей"></a>
+            <a class="main-catalog__link main-catalog__link-title" href="">
+              <h3 class="main-catalog__title">Cat Energy PRO 500 г</h3>
+            </a>
+            <a class="main-catalog__link main-catalog__link-image" href="">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-desktop-1@1x.png 1x, img/catalog-desktop-1@2x.png 2x">
+                <img class="main-catalog__image" src="img/catalog-mobile-1@1x.png" width="68" height="86" srcset="img/catalog-mobile-1@2x.png 2x" alt="Изображение малого жёлто-оранжевого пакета корма с курицей">
+              </picture>
+            </a>
               <dl class="main-catalog__properties">
                 <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -59,8 +70,15 @@
             <a class="link main-catalog__link-link" href="">Заказать</a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy PRO 1000 г</h3></a>
-            <a class="main-catalog__link main-catalog__link-image"><img class="main-catalog__image" src="img/catalog/catalog-2.png" width="84" height="101" alt="Изображение большого жёлто-оранжевого пакета корма с курицей"></a>
+            <a class="main-catalog__link main-catalog__link-title" href="">
+              <h3 class="main-catalog__title">Cat Energy PRO 1000 г</h3>
+            </a>
+            <a class="main-catalog__link main-catalog__link-image">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-desktop-2@1x.png 1x, img/catalog-desktop-2@2x.png 2x">
+              <img class="main-catalog__image" src="img/catalog-mobile-2@1x.png" width="84" height="101" srcset="img/catalog-mobile-2@2x.png 2x" alt="Изображение большого жёлто-оранжевого пакета корма с курицей">
+              </picture>
+            </a>
             <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -78,9 +96,16 @@
             <a class="link main-catalog__link-link" href="">Заказать</a>
           </li>
           <li class="main-catalog__item">
-            <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy
-              PRO 500 г</h3></a>
-              <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-3.png" width="68" height="78" alt="Изображение малого зелёного пакета корма с рыбой"></a>
+            <a class="main-catalog__link main-catalog__link-title" href="">
+              <h3 class="main-catalog__title">Cat Energy
+              PRO 500 г</h3>
+            </a>
+              <a class="main-catalog__link main-catalog__link-image" href="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-desktop-3@1x.png 1x, img/catalog-desktop-3@2x.png 2x">
+                  <img class="main-catalog__image" src="img/catalog-mobile-3@1x.png" width="68" height="78" srcset="img/catalog-mobile-3@2x.png 2x" alt="Изображение малого зелёного пакета корма с рыбой">
+              </picture>
+            </a>
             <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -100,7 +125,12 @@
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy
               PRO 1000 г</h3></a>
-              <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-4.png" width="84" height="101" alt="Изображение большого зелёного пакета корма с рыбой"></a>
+              <a class="main-catalog__link main-catalog__link-image" href="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-desktop-4@1x.png 1x, img/catalog-desktop-4@2x.png 2x">
+                  <img class="main-catalog__image" src="img/catalog-mobile-4@1x.png" width="84" height="101" srcset="img/catalog-mobile-4@1x.png 2x" alt="Изображение большого зелёного пакета корма с рыбой">
+                </picture>
+              </a>
             <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -120,8 +150,13 @@
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy
               SLIM 500 г</h3></a>
-              <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-5.png" width="68" height="78" alt="Изображение малого сине-голубого пакета корма с гречкой"></a>
-            <dl class="main-catalog__properties">
+              <a class="main-catalog__link main-catalog__link-image" href="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-desktop-5@1x.png 1x, img/catalog-desktop-5@2x.png 2x">
+                  <img class="main-catalog__image" src="img/catalog-mobile-5@1x.png" width="68" height="78" srcset="img/catalog-mobile-5@1x.png 2x" alt="Изображение малого сине-голубого пакета корма с гречкой">
+                </picture>
+              </a>
+              <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
                 <dd class="main-catalog__definition">500 г</dd>
@@ -140,7 +175,12 @@
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy
               SLIM 1000 г</h3></a>
-              <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-6.png" width="84" height="100" alt="Изображение большого сине-голубого пакета корма с гречкой"></a>
+              <a class="main-catalog__link main-catalog__link-image" href="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-desktop-6@1x.png 1x, img/catalog-desktop-6@2x.png 2x">
+                <img class="main-catalog__image" src="img/catalog-mobile-6@1x.png" width="84" height="100" srcset="img/catalog-mobile-6@2x.png 2x" alt="Изображение большого сине-голубого пакета корма с гречкой">
+                </picture>
+              </a>
             <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -160,7 +200,10 @@
           <li class="main-catalog__item">
             <a class="main-catalog__link main-catalog__link-title" href=""><h3 class="main-catalog__title">Cat Energy
               SLIM 500 г</h3></a>
-              <a class="main-catalog__link main-catalog__link-image" href=""><img class="main-catalog__image" src="img/catalog/catalog-7.png" width="72" height="84" alt="Изображение малого сиреневого пакета корма с рисом"></a>
+              <a class="main-catalog__link main-catalog__link-image" href="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/catalog-desktop-7@1x.png 1x, img/catalog-desktop-7@2x.png 2x">
+                <img class="main-catalog__image" src="img/catalog-mobile-7@1x.png" width="72" height="84" srcset="img/catalog-mobile-7@1x.png 2x" alt="Изображение малого сиреневого пакета корма с рисом"></a>
             <dl class="main-catalog__properties">
               <div class="main-catalog__wrapper">
                 <dt class="main-catalog__key">Macca</dt>
@@ -255,12 +298,9 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper page__leveler">
-      <div class="identity page-footer__identity">
-        <a class="identity__mark">
-          <img src="img/logo/logo-cat-mobile.png" width="33" height="38" alt="Логотип Cat energy">
-        </a>
-        <a class="identity__logo">
-          <img src="img/logo-caption.svg" width="101" height="18" alt="Cat energy">
+      <div class="page-footer__identity">
+        <a class="page-footer__mark">
+          <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat energy">
         </a>
       </div>
       <div class="social__wrapper page-footer-social">
