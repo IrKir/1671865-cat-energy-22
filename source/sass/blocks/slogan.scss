@@ -9,18 +9,13 @@
     z-index: -1;
     background:
       linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/background/cat-background.png");
+      var(--bg-image, url("../../img/cat-bg-mobile@1x.png"));
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      background:
-        linear-gradient(var(--filter-color), var(--filter-color)),
-        url("../../img/background/cat-background.png");
-      background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
-      background-size: cover, cover;
+      --bg-image: url("../../img/cat-bg-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -32,21 +27,11 @@
       height: 694px;
       right: 0;
       top: 0;
-      background:
-        linear-gradient(var(--filter-color), var(--filter-color)),
-        url("../../img/desktop/cat-desktop.png");
-      background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
-      background-size: cover, cover;
-    }
+      --bg-image: url("../../img/cat-bg-desktop@1x.png");
 
-    @media (min-resolution: 2dppx) {
-      background:
-        linear-gradient(var(--filter-color), var(--filter-color)),
-        url("../../img/desktop/cat-desktop@2x.png");
-      background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
-      background-size: cover, cover;
+      @media (min-resolution: 2dppx) {
+        --bg-image: url("../../img/cat-bg-desktop@2x.png");
+      }
     }
   }
 
