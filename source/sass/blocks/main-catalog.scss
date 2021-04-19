@@ -108,15 +108,20 @@
   @media (min-width: $tablet-width) {
     order: -1;
     align-items: flex-start;
-    width: 168px;
-    height: 200px;
     margin-top: -43px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
     margin-top: -52px;
+  }
+}
+
+.main-catalog__image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
   }
 }
 
