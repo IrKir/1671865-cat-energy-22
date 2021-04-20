@@ -206,12 +206,12 @@
   margin-left: 0;
 }
 
-.example__image-before {
+.example__image--before {
   width: 311px;
   height: 232;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 354;
     height: 620px;
   }
 
@@ -221,7 +221,7 @@
   }
 }
 
-.example__image-after {
+.example__image--after {
   display: none;
 
   @media (min-width: $tablet-width) {
