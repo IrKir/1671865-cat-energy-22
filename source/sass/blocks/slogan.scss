@@ -9,13 +9,13 @@
     z-index: -1;
     background:
       linear-gradient(var(--filter-color), var(--filter-color)),
-      var(--bg-image, url("../../img/cat-bg-mobile@1x.png"));
+      url("../../img/cat-bg-mobile@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      --bg-image: url("../../img/cat-bg-mobile@2x.png");
+      background: url("../../img/cat-bg-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -27,10 +27,15 @@
       height: 694px;
       right: 0;
       top: 0;
-      --bg-image: url("../../img/cat-bg-desktop@1x.png");
+      background:
+        linear-gradient(var(--filter-color), var(--filter-color)),
+        url("../../img/cat-bg-desktop@1x.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: center, center;
+      background-size: cover, cover;
 
       @media (min-resolution: 2dppx) {
-        --bg-image: url("../../img/cat-bg-desktop@2x.png");
+        background: url("../../img/cat-bg-desktop@2x.png");
       }
     }
   }
