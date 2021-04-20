@@ -91,32 +91,40 @@
   height: 362px;
   background:
     linear-gradient(var(--filter-color), var(--filter-color)),
-    var(--bg-map, url("../../img/location-mobile@1x.jpg"));
+    url("../../img/location-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover, 320px 362px;
 
   @media (min-resolution: 2dppx) {
-    --bg-map: url("../../img/location-mobile@2x.jpg");
+    background: url("../../img/location-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    --bg-map: url("../../img/location-tablet@1x.png");
+    background:
+      linear-gradient(var(--filter-color), var(--filter-color)),
+      url("../../img/location-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
     background-size: cover, 768px 400px;
 
     @media (min-resolution: 2dppx) {
-      --bg-map: url("../../img/location-tablet@2x.png");
+      background: url("../../img/location-tablet@2x.png");
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
-    --bg-map: url("../../img/location-desktop@1x.png");
+    background:
+      linear-gradient(var(--filter-color), var(--filter-color)),
+      url("../../img/location-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
     background-size: cover, 1440px 400px;
 
     @media (min-resolution: 2dppx) {
-      --bg-map: url("../../img/location-desktop@2x.png");
+      background: url("../../img/location-desktop@2x.png");
     }
   }
 }
