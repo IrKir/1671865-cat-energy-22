@@ -8,35 +8,47 @@
 .social__wrapper {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 150px;
-  }
+  width: 125px;
 }
 
 .social__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 22px; /*временно для наглядности*/
   list-style: none;
-  border: 1px solid grey;
+  padding: 0;
   margin-top: 20px;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    width: 122px;
     margin: 0;
-    padding: 0;
   }
 }
 
-.social__link--vkontakte {
-  width: 23px;
-  height: 13px;
-  background: url("../../img/stask.svg#icon_vkontakte");
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--social);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
 }
 
-.social__path--vkontakte {
-  fill: red;
+.social__link--vkontakte {
+  width: 20px;
+  height: 22px;
+  mask: url("../../img/stack.svg#icon_vkontakte");
+}
+
+.social__link--instagram {
+  width: 16px;
+  height: 16px;
+  mask: url("../../img/stack.svg#icon-insta");
+}
+
+.social__link--fb {
+  width: 16px;
+  height: 16px;
+  mask: url("../../img/stack.svg#icon-fb");
 }
