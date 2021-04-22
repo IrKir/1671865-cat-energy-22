@@ -1,6 +1,7 @@
 .copyright__wrapper {
   width: 280px;
-  padding: 22px 0;
+  margin: 0;
+  padding: 15px 0;
   border-top: 1px solid var(--additional-accent);
 
   @media (min-width: $tablet-width) {
@@ -12,6 +13,8 @@
 }
 
 .copyright__link {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,15 +37,19 @@
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
   background-color: var(--logo);
 }
 
 .copyright__logo--color {
+  width: 43px;
+  height: 43px;
   mask: url("../../img/logo/htmlacademy.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: 0 0;
 }
 

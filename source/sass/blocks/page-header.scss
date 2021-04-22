@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 7px;
 
   @media (min-width: $tablet-width) {
     padding-top: 42px;
@@ -18,7 +19,6 @@
 .page-header__identity {
   height: 38px;
   padding-top: 11px;
-  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
