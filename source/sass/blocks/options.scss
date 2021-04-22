@@ -11,7 +11,8 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    margin-top: none;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,7 +31,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 45px;
     width: 570px;
     padding: 0 0 55px 54px;
   }
@@ -42,6 +42,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 

@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     width: 325px;
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 61px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -64,7 +64,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 64px;
+    margin-bottom: 55px;
     justify-content: space-between;
     align-items: center;
   }
@@ -83,6 +83,7 @@
   @media (min-width: $tablet-width) {
     width: 162px;
     padding: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,6 +109,7 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+    margin-top: -10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -207,7 +209,7 @@
 }
 
 .example__image--before {
-  width: 311px;
+  width: 354px;
   height: 232;
 
   @media (min-width: $tablet-width) {
@@ -273,6 +275,7 @@
   @media (min-width: $tablet-width) {
     width: 580px;
     margin: 0 auto;
+    margin-top: -85px;
     text-align: right;
   }
 }
