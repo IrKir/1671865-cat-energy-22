@@ -52,3 +52,11 @@
   height: 16px;
   mask: url("../../img/stack.svg#icon-fb");
 }
+
+.social__link:hover {
+  background-color: var(--basic-accent);
+}
+
+.social__link:active {
+  background-color: var(--basic-accent-opacity);
+}
