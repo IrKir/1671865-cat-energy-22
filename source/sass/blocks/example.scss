@@ -1,5 +1,4 @@
 .example {
-  padding-top: 27px;
   padding-bottom: 25px;
   background-color: var(--additional-grayish);
 
@@ -10,7 +9,9 @@
 }
 
 .example__title {
+  margin: 0;
   margin-bottom: 33px;
+  padding-top: 26px;
   font-family: var(--accent-font), sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -79,11 +80,11 @@
   display: flex;
   flex-direction: column;
   width: 124px;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    padding: 0;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,14 +93,23 @@
 }
 
 .example__item--position {
+  position: relative;
   width: 280px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 42px;
+  margin-top: 3px;
+  margin-bottom: 33px;
+  margin-left: -5px;
   padding: 0;
   border: none;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    left: 170px;
+    content: ":";
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -124,7 +134,7 @@
 .example__key {
   width: 87px;
   margin: 0 auto;
-  margin-top: -15px;
+  margin-top: -16px;
   padding: 8px 5px;
   font-family: var(--basic-font), sans-serif;
   font-size: 12px;
@@ -149,6 +159,7 @@
 .example__key--position {
   width: 135px;
   margin: 0;
+  padding-right: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -166,7 +177,7 @@
 .example__definition {
   order: -1;
   margin: 0;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 16px;
   font-family: var(--accent-font), sans-serif;
   font-size: 24px;
@@ -209,8 +220,8 @@
 }
 
 .example__image--before {
-  width: 354px;
-  height: 232;
+  width: 311px;
+  height: 232px;
 
   @media (min-width: $tablet-width) {
     width: 354;
@@ -268,9 +279,12 @@
 }
 
 .example__buttons-wrap {
+  width: 210px;
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 28px;
+  margin-left: 38px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 580px;
@@ -278,4 +292,33 @@
     margin-top: -85px;
     text-align: right;
   }
+}
+
+.example__toggle {
+  width: 84px;
+  height: 14px;
+  margin-top: 4px;
+  background-color: var(--accent-text-color);
+  border-radius: 6px;
+  border: 1px solid var(--additional-light);
+}
+
+.example__scale {
+  margin-top: 3px;
+  margin-left: 4px;
+  width: 35px;
+  height: 6px;
+  background-color: var(--basic-accent);
+  border-radius: 6px;
+}
+
+.example__button {
+  font-family: var(--accent-font), sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--header-font);
+  border: none;
+
 }
