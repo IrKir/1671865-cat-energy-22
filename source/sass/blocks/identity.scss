@@ -31,3 +31,15 @@
     height: 59px;
   }
 }
+
+.identity__img:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 0.8;
+  }
+}
+
+.identity__img:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+  }
+}
