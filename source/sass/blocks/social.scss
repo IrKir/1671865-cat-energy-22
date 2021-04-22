@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   width: 125px;
+  border: none;
 }
 
 .social__list {
@@ -29,7 +30,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background-color: var(--social);
+  background-color: var(--logo);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 0;

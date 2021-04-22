@@ -1,6 +1,7 @@
 .copyright__wrapper {
   width: 280px;
   padding: 22px 0;
+  border-top: 1px solid var(--additional-accent);
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -21,7 +22,33 @@
   color: var(--basic-text-color);
 }
 
+.copyright__link:active {
+  opacity: 0.3;
+}
+
 .copyright__text {
   margin: 0;
   padding: 0;
+  color: var(--basic-text-color);
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 24px;
+  background-color: var(--logo);
+}
+
+.copyright__logo--color {
+  mask: url("../../img/logo/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.copyright__logo--color:hover {
+  background-color: var(--basic-accent);
+}
+
+.copyright__text:hover + .copyright__logo--color {
+  background-color: var(--basic-accent);
 }
