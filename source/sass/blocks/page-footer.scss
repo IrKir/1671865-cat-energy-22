@@ -27,6 +27,29 @@
   }
 }
 
+.page-footer__mark {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  background-color: var(--logo-footer);
+}
+
+.page-footer__mark--color {
+  mask: url("../../img/footer-logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.page-footer__mark--color:hover {
+  opacity: 0.6;
+}
+
+.page-footer__mark--color:active {
+  opacity: 0.3;
+}
+
 .page-footer-social {
   width: 280px;
   border-bottom: 1px solid var(--additional-accent);
