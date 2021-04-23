@@ -45,12 +45,12 @@
 }
 
 .copyright__logo--color {
-  width: 43px;
-  height: 43px;
+  width: 34px;
+  height: 40px;
   mask: url("../../img/logo/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 0;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
 }
 
 .copyright__logo--color:hover {

@@ -37,9 +37,9 @@
 
 .page-footer__mark--color {
   mask: url("../../img/footer-logo.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
 }
 
 .page-footer__mark--color:hover {
