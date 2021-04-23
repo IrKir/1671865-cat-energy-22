@@ -26,30 +26,57 @@
 
 .social__link {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background-color: var(--logo);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .social__link--vkontakte {
-  width: 20px;
-  height: 22px;
+  width: 23px;
+  height: 13px;
   mask: url("../../img/stack.svg#icon_vkontakte");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
+
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 17px;
+  }
 }
 
 .social__link--instagram {
   width: 16px;
   height: 16px;
   mask: url("../../img/stack.svg#icon-insta");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .social__link--fb {
-  width: 16px;
-  height: 16px;
+  width: 11px;
+  height: 18px;
   mask: url("../../img/stack.svg#icon-fb");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
+
+  @media (min-width: $tablet-width) {
+    width: 15px;
+    height: 27px;
+  }
 }
 
 .social__link:hover {
