@@ -115,18 +115,18 @@
 
 .recommendations__text--water {
   &::before {
-    background: url("../../img/stack.svg#icon-water");
+    background-image: url("../../img/stack.svg#icon-water");
   }
 }
 
 .recommendations__text--cutlery {
   &::before {
-    background: url("../../img/stack.svg#icon-cutlery");
+    background-image: url("../../img/stack.svg#icon-cutlery");
   }
 }
 
 .recommendations__text--clock {
   &::before {
-    background: url("../../img/stack.svg#icon-clock");
+    background-image: url("../../img/stack.svg#icon-clock");
   }
 }
