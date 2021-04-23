@@ -35,7 +35,9 @@
       background-size: cover, cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat-bg-desktop@2x.png");
+        background:
+          linear-gradient(var(--filter-color), var(--filter-color)),
+          url("../../img/cat-bg-desktop@2x.png");
       }
     }
   }
