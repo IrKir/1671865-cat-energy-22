@@ -216,17 +216,16 @@
 .owner-contacts__icon {
   position: absolute;
   right: 10px;
-  width: 25px;
+  width: 20px;
   height: 20px;
   background-color: var(--addition-text-color);
   background-repeat: no-repeat;
-
   mask-size: cover;
 }
 
 .owner-contacts__icon--letter {
   top: 13px;
-  mask: url("../../img/icons/letter.svg");
+  mask: url("../../img/stack.svg#letter");
 
   @media (min-width: $tablet-width) {
     top: 17px;
@@ -235,7 +234,7 @@
 
 .owner-contacts__icon--phone {
   width: 20px;
-  mask: url("../../img/icons/phone.svg");
+  mask: url("../../img/stack.svg#phone");
 }
 
 .owner-contacts__input:hover + .owner-contacts__icon {
