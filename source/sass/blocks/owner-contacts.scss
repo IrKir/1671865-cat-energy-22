@@ -217,17 +217,24 @@
   position: absolute;
   right: 10px;
   width: 25px;
-  height: 25px;
-  background: var(--addition-text-color);
+  height: 20px;
+  background-color: var(--addition-text-color);
+  background-repeat: no-repeat;
+
   mask-size: cover;
 }
 
 .owner-contacts__icon--letter {
   top: 13px;
   mask: url("../../img/icons/letter.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+  }
 }
 
 .owner-contacts__icon--phone {
+  width: 20px;
   mask: url("../../img/icons/phone.svg");
 }
 
