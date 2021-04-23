@@ -219,17 +219,16 @@
   width: 25px;
   height: 25px;
   background: var(--addition-text-color);
-  mask: var(--icon);
   mask-size: cover;
 }
 
 .owner-contacts__icon--letter {
   top: 13px;
-  --icon: url("../../img/icons/letter.svg");
+  mask: url("../../img/icons/letter.svg");
 }
 
 .owner-contacts__icon--phone {
-  --icon: url("../../img/icons/phone.svg");
+  mask: url("../../img/icons/phone.svg");
 }
 
 .owner-contacts__input:hover + .owner-contacts__icon {

@@ -15,7 +15,7 @@
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      background: url("../../img/cat-bg-mobile@2x.png");
+      background-image: url("../../img/cat-bg-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -35,7 +35,7 @@
       background-size: cover, cover;
 
       @media (min-resolution: 2dppx) {
-        background: url("../../img/cat-bg-desktop@2x.png");
+        background-image: url("../../img/cat-bg-desktop@2x.png");
       }
     }
   }
