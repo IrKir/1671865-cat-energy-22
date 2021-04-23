@@ -225,7 +225,7 @@
 
 .owner-contacts__icon--letter {
   top: 13px;
-  mask: url("../../img/stack.svg#letter");
+  mask-image: url("../../img/stack.svg#letter");
 
   @media (min-width: $tablet-width) {
     top: 17px;
@@ -234,7 +234,7 @@
 
 .owner-contacts__icon--phone {
   width: 20px;
-  mask: url("../../img/stack.svg#phone");
+  mask-image: url("../../img/stack.svg#phone");
 }
 
 .owner-contacts__input:hover + .owner-contacts__icon {

@@ -29,6 +29,9 @@
   width: 23px;
   height: 23px;
   background-color: var(--logo);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center center;
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -39,11 +42,7 @@
 .social__link--vkontakte {
   width: 23px;
   height: 13px;
-  mask: url("../../img/stack.svg#icon_vkontakte");
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  mask-position: center center;
-
+  mask-image: url("../../img/stack.svg#icon_vkontakte");
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -54,10 +53,7 @@
 .social__link--instagram {
   width: 16px;
   height: 16px;
-  mask: url("../../img/stack.svg#icon-insta");
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  mask-position: center center;
+  mask-image: url("../../img/stack.svg#icon-insta");
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -68,10 +64,7 @@
 .social__link--fb {
   width: 11px;
   height: 18px;
-  mask: url("../../img/stack.svg#icon-fb");
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  mask-position: center center;
+  mask-image: url("../../img/stack.svg#icon-fb");
 
   @media (min-width: $tablet-width) {
     width: 15px;
