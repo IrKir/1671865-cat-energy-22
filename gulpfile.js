@@ -13,8 +13,6 @@ const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
-const sync = require("browser-sync").create();
-const csso = require("postcss-csso");
 
 // Styles
 
@@ -71,7 +69,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"))
 }
 
-exports.images = optimizeImages;
+exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -101,7 +99,7 @@ const svgstack = () => {
       }
     }))
     .pipe(rename("stack.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.svgstack = svgstack;
@@ -122,6 +120,34 @@ const server = (done) => {
 
 exports.server = server;
 
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
+// Reload
+
+const reload = (done) => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
@@ -133,3 +159,38 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, svgstack, server, watcher
 );
+
+// Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svgstack,
+    createWebp
+  ),
+);
+
+exports.build = build;
+
+// Default
+
+exports.default = gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svgstack,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
