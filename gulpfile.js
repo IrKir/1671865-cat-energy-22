@@ -8,6 +8,7 @@ const autoprefixer = require("autoprefixer");
 const svgsprite = require("gulp-svg-sprite");
 const rename = require("gulp-rename");
 const sync = require("browser-sync").create();
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -22,12 +23,24 @@ const styles = () => {
       }),
       autoprefixer()
     ]))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({  collapseWhitespace: true }))
+.pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
 
 // Svg stack
 
