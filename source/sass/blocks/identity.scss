@@ -18,18 +18,24 @@
   margin-left: 56px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    margin: 0;
   }
 }
 
 .identity__mark {
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .identity__img {
+  display: block;
+
   @media (min-width: $tablet-width) {
-    width: 174px;
-    height: 52px;
+    width: 60px;
+    height: 50px;
   }
 
   @media (min-width: $desktop-width) {
