@@ -3,6 +3,7 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
+const csso = require("gulp-postcss-csso");
 const postcssUrl = require("postcss-url");
 const autoprefixer = require("autoprefixer");
 const svgsprite = require("gulp-svg-sprite");
@@ -28,6 +29,7 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(rename("style.min.css"))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -40,7 +42,7 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
   .pipe(htmlmin({  collapseWhitespace: true }))
-.pipe(gulp.dest("build"));
+  .pipe(gulp.dest("build"));
 }
 
 exports.html = html;
@@ -60,7 +62,7 @@ exports.scripts = scripts;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
@@ -72,7 +74,7 @@ const optimizeImages = () => {
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(gulp.dest("build/img"))
 }
 
@@ -109,7 +111,7 @@ exports.svgstack = svgstack;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -126,6 +128,8 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/img/favicon.svg",
+    "source/manifest.webmanifest"
   ], {
     base: "source"
   })
@@ -155,10 +159,6 @@ const watcher = () => {
   gulp.watch("source/img/icons/**/*.svg", gulp.series("svgstack"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  styles, svgstack, server, watcher
-);
 
 // Build
 
