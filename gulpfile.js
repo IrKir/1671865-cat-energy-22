@@ -3,7 +3,7 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
-const csso = require("gulp-postcss-csso");
+const csso = require("postcss-csso");
 const postcssUrl = require("postcss-url");
 const autoprefixer = require("autoprefixer");
 const svgsprite = require("gulp-svg-sprite");
@@ -26,10 +26,10 @@ const styles = () => {
       postcssUrl({
         assetsPath: "../"
       }),
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename("style.min.css"))
-    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -129,6 +129,7 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/favicon.svg",
+    "source/img/logo.svg",
     "source/manifest.webmanifest"
   ], {
     base: "source"
