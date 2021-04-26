@@ -15,7 +15,9 @@
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/cat-bg-mobile@2x.png");
+      background-image:
+        linear-gradient(var(--filter-color), var(--filter-color)),
+        url("../../img/cat-bg-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
