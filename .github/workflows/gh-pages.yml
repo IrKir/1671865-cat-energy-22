@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches: '*'
 
 jobs:
   deploy:
@@ -17,12 +15,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
 
-      - name: Installing Dependencies
+      - name: Installing dependencies
         run: npm ci
 
       - name: Linting
@@ -31,8 +29,8 @@ jobs:
       - name: Building
         run: npm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - name: Deploying
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FOLDER: ./build
