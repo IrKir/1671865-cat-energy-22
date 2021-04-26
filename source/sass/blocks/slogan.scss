@@ -51,7 +51,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min min 1fr 1fr min;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), "Arial", sans-serif;
   color: var(--accent-text-color);
   text-align: center;
 
@@ -71,7 +71,7 @@
 .slogan__title {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;

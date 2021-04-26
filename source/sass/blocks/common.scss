@@ -1,5 +1,5 @@
 .common {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -70,7 +70,7 @@
 .common__input {
   flex-grow: 1;
   padding: 13px 0 14px 15px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
