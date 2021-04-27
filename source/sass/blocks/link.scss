@@ -1,10 +1,10 @@
 .link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 11px;
-  padding-bottom: 10px;
+  padding: 11px 9px 10px;
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 18px;
