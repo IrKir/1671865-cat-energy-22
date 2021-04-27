@@ -37,12 +37,9 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 30px;
   margin-bottom: 18px;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-  }
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .radio__wrapper:last-child {
