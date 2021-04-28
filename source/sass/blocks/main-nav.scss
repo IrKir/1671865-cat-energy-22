@@ -35,6 +35,7 @@
 
     &--desktop-special {
       --color-special: var(--accent-text-color);
+
     }
   }
 }
@@ -99,16 +100,21 @@
   font-weight: 500;
   text-transform: uppercase;
   color: var(--color-special, var(--header-font));
+  border-color: var(--color-special, var(--basic-accent));
   text-decoration: none;
 
   &:hover {
-    color: var(--catalog-hover);
+    opacity: 0.6;
   }
 
   &:active {
+    opacity: 0.3;
+  }
+
+  &[aria-current="page"] {
     padding-bottom: 8px;
-    color: var(--header-font);
-    border-bottom: 2px solid var(--basic-accent);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
   }
 
   @media (min-width: $tablet-width) {
@@ -119,34 +125,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: var(--accent-text-color);
-
-    &:hover {
-      color: var(--dsct-catalog-hover);
-    }
-
-    &:active {
-      padding-bottom: 8px;
-      color: var(--accent-text-color);
-      border-bottom: 2px solid var(--accent-text-color);
-    }
   }
-}
-
-.main-nav__link--active {
-  color: var(--catalog-current);
-
-  @media (min-width: $desktop-width) {
-    color: var(--dsct-catalog-current);
-  }
-}
-
-.main-nav__list-form .main-nav__link {
-  color: var(--header-font);
-}
-
-.main-nav__list-form .main-nav__link--form {
-  color: var(--catalog-current);
 }
 
 .main-nav__toggle {
