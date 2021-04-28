@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  scroll-snap-type: y mandatory;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -19,6 +20,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr min;
+  scroll-snap-align: start;
+  scroll-margin: 90px;
 
   &::before {
     position: absolute;
