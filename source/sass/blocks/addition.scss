@@ -185,16 +185,16 @@
 .addition__input:checked + .addition__label::after {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -37px;
   top: 2px;
   width: 18px;
   height: 14px;
-  background: url("../../img/icons/check-mark.svg");
+  background: url("../../img/stack.svg#check-mark");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    left: -45px;
-    top: 6px;
+    left: -42px;
+    top: 8px;
   }
 }
 

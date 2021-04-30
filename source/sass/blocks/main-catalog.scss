@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  scroll-snap-type: y mandatory;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -19,6 +20,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr min;
+  scroll-snap-align: start;
+  scroll-margin: 90px;
 
   &::before {
     position: absolute;
@@ -59,7 +62,6 @@
   margin: 0;
   margin-bottom: 18px;
   padding-top: 24px;
-
   font-family: var(--accent-font), sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -330,7 +332,7 @@
     height: 30px;
     top: -40px;
     left: 120px;
-    background: url("../../img/icons/plus.svg");
+    background: url("../../img/stack.svg#plus");
     background-repeat: no-repeat;
   }
 
@@ -343,7 +345,7 @@
       height: 60px;
       top: 0;
       left: -30px;
-      background-image: url("../../img/icons/plus-tb.svg");
+      background-image: url("../../img/stack.svg#plus");
     }
   }
 
