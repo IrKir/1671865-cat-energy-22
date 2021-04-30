@@ -147,6 +147,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   grid-column: 3 / 5;
   grid-row: 2 / 3;

@@ -31,6 +31,7 @@
 
 .common__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: stretch;
   margin-bottom: 13px;
 
@@ -69,7 +70,7 @@
 
 .common__input {
   flex-grow: 1;
-  padding: 13px 0 14px 15px;
+  padding: 13px 15px 14px;
   font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -93,7 +94,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0 12px 19px;
+    padding: 10px 19px 12px;
   }
 
   @media (min-width: $desktop-width) {
