@@ -47,8 +47,9 @@
 }
 
 .recommendations__item {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 21px;
-  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -80,8 +81,18 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
   padding-left: 80px;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 245px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.recommendations__text:first-child {
   &::before {
     position: absolute;
     content: "";
@@ -97,11 +108,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    width: 245px;
-    margin: 0;
-    padding: 0;
-
     &::before {
       position: absolute;
       content: "";
@@ -113,19 +119,19 @@
   }
 }
 
-.recommendations__text--water {
+.recommendations__text--water:first-child {
   &::before {
     background-image: url("../../img/stack.svg#icon-water");
   }
 }
 
-.recommendations__text--cutlery {
+.recommendations__text--cutlery:first-child {
   &::before {
     background-image: url("../../img/stack.svg#icon-cutlery");
   }
 }
 
-.recommendations__text--clock {
+.recommendations__text--clock:first-child {
   &::before {
     background-image: url("../../img/stack.svg#icon-clock");
   }
