@@ -71,7 +71,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    width: 366px;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 0;
   }
 }
@@ -93,7 +95,6 @@
 }
 
 .example__item--position {
-  position: relative;
   width: 280px;
   flex-direction: row;
   justify-content: center;
@@ -103,13 +104,6 @@
   margin-left: -5px;
   padding: 0;
   border: none;
-
-  &::after {
-    position: absolute;
-    top: 8px;
-    left: 170px;
-    content: ":";
-  }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -125,7 +119,7 @@
   @media (min-width: $desktop-width) {
     width: 327px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 75px;
   }
@@ -157,6 +151,7 @@
 }
 
 .example__key--position {
+  position: relative;
   width: 135px;
   margin: 0;
   padding-right: 0;
@@ -166,11 +161,27 @@
   font-family: var(--accent-font), "Arial", sans-serif;
   color: var(--header-font);
 
+  &::after {
+    position: absolute;
+    top: 7px;
+    right: 3px;
+    content: ":";
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
     padding: 0;
-    width: 200px;
+    width: 180px;
     font-size: 20px;
+
+    &::after {
+      top: -2px;
+      right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 }
 
@@ -198,6 +209,7 @@
 }
 
 .example__definition--position {
+  position: relative;
   order: 0;
   margin: 0;
   padding: 0;
@@ -219,34 +231,70 @@
   margin-left: 0;
 }
 
-.example__image--before {
-  width: 311px;
-  height: 232px;
-
+.example__wrap-before {
   @media (min-width: $tablet-width) {
-    width: 354;
+    position: relative;
+    width: 354px;
     height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    height: 515px;
+    width: 600px;
+  }
+}
+
+.example__image--before {
+  display: block;
+  margin-left: -15px;
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50px;
+    width: 708px;
+    height: 620px;
+    object-fit: cover;
+    object-position: -50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -20px;
+    object-position: -48px 0;
+  }
+}
+
+.example__wrap-after {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 354px;
+    height: 620px;
   }
 }
 
 .example__image--after {
   display: none;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     display: block;
-    width: 354px;
-    height: 607px;
+    top: -8px;
+    left: 35px;
+    width: 708px;
+    height: 620px;
+    object-fit: cover;
+    object-position: -300px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -33px;
+    top: -5px;
+    left: -38px;
+    object-position: -320px 0;
   }
 }
+
 
 .example__no-wrap {
   @media (min-width: $desktop-width) {
@@ -281,15 +329,17 @@
 .example__buttons-wrap {
   width: 210px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding-top: 28px;
   margin-left: 38px;
   margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
-    width: 580px;
+    width: 640px;
     margin: 0 auto;
-    margin-top: -85px;
+    padding: 0;
     text-align: right;
   }
 }
@@ -297,10 +347,17 @@
 .example__toggle {
   width: 84px;
   height: 14px;
-  margin-top: 4px;
   background-color: var(--accent-text-color);
   border-radius: 6px;
   border: 1px solid var(--additional-light);
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    margin-top: 0;
+    background-color: var(--additional-accent);
+  }
 }
 
 .example__scale {
@@ -310,6 +367,19 @@
   height: 6px;
   background-color: var(--basic-accent);
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -14px;
+    left: 210px;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 17px solid var(--accent-text-color);
+    box-shadow: (0 1px 3px var(--shadow));
+  }
 }
 
 .example__button {
@@ -320,4 +390,9 @@
   text-transform: uppercase;
   color: var(--header-font);
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
