@@ -89,9 +89,7 @@
 
 .contacts__wrap {
   height: 362px;
-  background:
-    linear-gradient(var(--filter-color), var(--filter-color)),
-    url("../../img/location-mobile@1x.jpg");
+  background-image: url("../../img/location-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover, 320px 362px;
@@ -102,9 +100,7 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    background:
-      linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/location-tablet@1x.png");
+    background-image: url("../../img/location-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover, 768px 400px;
@@ -116,9 +112,7 @@
 
   @media (min-width: $desktop-width) {
     height: 400px;
-    background:
-      linear-gradient(var(--filter-color), var(--filter-color)),
-      url("../../img/location-desktop@1x.png");
+    background-image: url("../../img/location-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: center, center;
     background-size: cover, 1440px 400px;
@@ -126,5 +120,14 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/location-desktop@2x.png");
     }
+  }
+}
+
+.contacts__freim {
+  display: block;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
