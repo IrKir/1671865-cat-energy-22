@@ -7,9 +7,10 @@
     width: 100%;
     height: 302px;
     z-index: -1;
-    background:
+    background-color: var(--background);
+    background-image:
       linear-gradient(var(--filter-color), var(--filter-color)),
-      var(--background) url("../../img/cat-bg-mobile@1x.png");
+      url("../../img/cat-bg-mobile@1x.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover, cover;
@@ -17,7 +18,7 @@
     @media (min-resolution: 2dppx) {
       background-image:
         linear-gradient(var(--filter-color), var(--filter-color)),
-        var(--background) url("../../img/cat-bg-mobile@2x.png");
+        url("../../img/cat-bg-mobile@2x.png");
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -29,9 +30,9 @@
       height: 694px;
       right: 0;
       top: 0;
-      background:
+      background-image:
         linear-gradient(var(--filter-color), var(--filter-color)),
-        var(--background) url("../../img/cat-bg-desktop@1x.png");
+        url("../../img/cat-bg-desktop@1x.png");
       background-repeat: no-repeat, no-repeat;
       background-position: center, center;
       background-size: cover, cover;
@@ -39,7 +40,7 @@
       @media (min-resolution: 2dppx) {
         background-image:
           linear-gradient(var(--filter-color), var(--filter-color)),
-          var(--background) url("../../img/cat-bg-desktop@2x.png");
+          url("../../img/cat-bg-desktop@2x.png");
       }
     }
   }
