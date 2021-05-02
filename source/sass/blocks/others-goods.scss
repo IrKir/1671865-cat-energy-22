@@ -261,7 +261,7 @@
     background: var(--basic-accent) url("../../img/gift-bg-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background: var(--basic-accent) url("../../img/gift-bg-desktop@2x.png");
+      background: url("../../img/gift-bg-desktop@2x.png");
     }
 
     &::before {
