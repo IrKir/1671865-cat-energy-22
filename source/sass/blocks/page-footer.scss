@@ -50,11 +50,25 @@
   opacity: 0.6;
 }
 
-.page-footer-social {
+.page-footer__social {
   width: 280px;
   border-bottom: 1px solid var(--additional-accent);
 
   @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__copyright {
+  width: 280px;
+  margin: 0;
+  padding: 15px 0;
+  border-top: 1px solid var(--additional-accent);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 170px;
     border: none;
   }
 }
