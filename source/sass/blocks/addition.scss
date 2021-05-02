@@ -197,3 +197,7 @@
     top: 8px;
   }
 }
+
+.addition__input:focus-visible {
+  outline: 1px solid var(--basic-text-color);
+}

@@ -93,6 +93,10 @@
     border: 1px solid var(--error);
   }
 
+  &:focus-visible {
+    outline: 1px solid var(--basic-text-color);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 19px 12px;
   }

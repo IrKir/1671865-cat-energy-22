@@ -92,6 +92,10 @@
   opacity: 0.3;
 }
 
+.radio__input:focus-visible {
+  outline: 1px solid var(--basic-text-color);
+}
+
 .radio__label {
   margin-left: 45px;
 

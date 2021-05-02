@@ -193,6 +193,10 @@
     border: 1px solid var(--basic-text-color);
   }
 
+  &:focus-visible {
+    outline: 1px solid var(--basic-text-color);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
