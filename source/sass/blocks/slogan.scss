@@ -27,7 +27,7 @@
 
     @media (min-width: $desktop-width) {
       width: 50%;
-      height: 694px;
+      height: 690px;
       right: 0;
       top: 0;
       background-image:
@@ -93,6 +93,7 @@
 
   @media (min-width: $desktop-width) {
     width: 420px;
+    margin-top: 78px;
     margin-left: 80px;
     margin-bottom: 40px;
   }
@@ -118,6 +119,7 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
+    margin-left: 80px;
     margin-bottom: 52px;
   }
 }
