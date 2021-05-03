@@ -46,7 +46,7 @@
 }
 
 .common__wrapper:last-child {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -59,7 +59,7 @@
 
 .common__label {
   min-width: fit-content;
-  margin-right: 9px;
+  margin-right: 15px;
   padding: 13px 0 14px;
 
   @media (min-width: $tablet-width) {
@@ -70,7 +70,7 @@
 
 .common__input {
   flex-grow: 1;
-  padding: 13px 15px 14px;
+  padding: 13px 15px;
   font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;

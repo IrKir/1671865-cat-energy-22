@@ -37,13 +37,13 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
 .radio__wrapper:last-child {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .radio__input + .radio__label::before {
@@ -97,7 +97,7 @@
 }
 
 .radio__label {
-  margin-left: 45px;
+  margin-left: 46px;
 
   @media (min-width: $tablet-width) {
     margin-left: 61px;
