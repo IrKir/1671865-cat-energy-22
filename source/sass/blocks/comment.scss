@@ -99,6 +99,7 @@
 
 .comment__textarea {
   display: block;
+  resize: vertical;
   width: 280px;
   padding-top: 9px;
   font-family: var(--accent-font), "Arial", sans-serif;

@@ -146,6 +146,10 @@
   }
 }
 
+.main-nav--closed {
+  min-height: 0;
+}
+
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -168,8 +172,8 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -49px;
-  right: 19px;
+  top: -46px;
+  right: 5px;
   border: none;
 
   &::before,
