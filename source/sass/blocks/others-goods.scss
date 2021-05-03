@@ -222,7 +222,7 @@
   background-image: url("../../img/gift-bg-mobile@1x.png");
 
   @media (min-resolution: 2dppx) {
-    background: var(--basic-accent) url("../../img/gift-bg-mobile@2x.png");
+    background-image: url("../../img/gift-bg-mobile@2x.png");
   }
 
   &::before {
