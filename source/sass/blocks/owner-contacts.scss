@@ -95,8 +95,9 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0;
-    margin-top: 81px;
-    margin-bottom: 70px;
+    margin-left: 39px;
+    margin-top: 74px;
+    margin-bottom: 75px;
 
     &::after {
       flex-grow: 1;
@@ -104,7 +105,7 @@
       width: 145px;
       height: 2px;
       margin-left: 40px;
-      margin-top: 18px;
+      margin-top: 20px;
       box-shadow:
         144px 0 0 var(--basic-accent),
         288px 0 0 var(--basic-accent),
@@ -117,7 +118,7 @@
       left: -340px;
       width: 300px;
       height: 2px;
-      top: 18px;
+      top: 20px;
       border-top: 2px solid var(--basic-accent);
     }
   }
@@ -156,7 +157,7 @@
   padding-right: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 12px;
+    padding-right: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -218,13 +219,17 @@
   mask-image: url("../../img/stack.svg#letter");
 
   @media (min-width: $tablet-width) {
-    top: 17px;
+    top: 16px;
   }
 }
 
 .owner-contacts__icon--phone {
   width: 20px;
   mask-image: url("../../img/stack.svg#phone");
+
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
 }
 
 .owner-contacts__input:hover + .owner-contacts__icon {

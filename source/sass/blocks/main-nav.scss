@@ -43,7 +43,7 @@
 .main-nav__item {
   position: relative;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -173,7 +173,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -46px;
+  top: -47px;
   right: 5px;
   border: none;
 

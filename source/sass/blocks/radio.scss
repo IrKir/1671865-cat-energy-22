@@ -18,9 +18,16 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
-    padding: 25px 27px 0;
+    margin: 0 auto;
+    padding: 24px 0;
     font-size: 20px;
     line-height: 30px;
+    border: 1px solid var(--additional-accent-grayish);
+
+    &::after {
+      position: absolute;
+      content: initial;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -40,10 +47,19 @@
   margin-bottom: 13px;
   padding-top: 6px;
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-bottom: 11px;
+  }
 }
 
 .radio__wrapper:last-child {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .radio__input + .radio__label::before {
@@ -60,8 +76,8 @@
     content: "";
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 39px;
+    height: 39px;
     border: 1px solid var(--additional-light);
   }
 }
