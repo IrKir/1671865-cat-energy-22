@@ -20,6 +20,10 @@
   margin: 0;
   padding: 0;
   color: var(--basic-text-color);
+
+  @media (min-width: $tablet-width) {
+    margin-left: 7px;
+  }
 }
 
 .copyright__logo {
