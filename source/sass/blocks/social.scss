@@ -3,6 +3,11 @@
   padding: 0;
   width: 125px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    padding-left: 20px;
+  }
 }
 
 .social__list {
