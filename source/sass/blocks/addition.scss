@@ -8,7 +8,7 @@
   display: flex;
   justify-content: stretch;
   width: 280px;
-  margin-top: 17px;
+  margin-top: 24px;
   margin-bottom: 33px;
 
   &::before {
@@ -45,7 +45,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 18px;
+      top: 22px;
       left: -390px;
       width: 350px;
       height: 2px;
@@ -57,7 +57,7 @@
       content: "";
       width: 145px;
       height: 2px;
-      margin-top: 18px;
+      margin-top: 22px;
       margin-left: 40px;
       box-shadow:
         144px 0 0 var(--basic-accent),
@@ -105,6 +105,7 @@
   color: var(--header-font);
 
   @media (min-width: $tablet-width) {
+    width: 628px;
     margin-left: 40px;
     font-size: 20px;
     line-height: 30px;
@@ -130,7 +131,7 @@
     padding: 7px 0;
     width: 284px;
     padding-left: 59px;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,7 +143,7 @@
 .addition__item:nth-child(3),
 .addition__item:last-child {
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -169,8 +170,8 @@
   @media (min-width: $tablet-width) {
     left: -59px;
     top: -7px;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -193,7 +194,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    left: -42px;
+    left: -45px;
     top: 8px;
   }
 }

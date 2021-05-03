@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      content: initial;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,8 +40,9 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-    margin-left: 41px;
+    width: 628px;
+    margin-bottom: 17px;
+    margin-left: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,7 +65,7 @@
 .common__label {
   min-width: fit-content;
   margin-right: 15px;
-  padding: 13px 0 14px;
+  padding: 14px 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 14px;
@@ -98,7 +103,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 19px 12px;
+    padding: 11px 19px 12px;
   }
 
   @media (min-width: $desktop-width) {
