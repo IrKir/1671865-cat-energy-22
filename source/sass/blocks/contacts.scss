@@ -1,4 +1,6 @@
 .contacts {
+  background-color: var(--additional-darkaccent);
+  
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
