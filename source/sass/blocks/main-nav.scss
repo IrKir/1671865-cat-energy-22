@@ -159,9 +159,9 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  right: 0;
-  top: -7px;
-  width: 36px;
+  right: -20px;
+  top: -3px;
+  width: 28px;
   height: 2px;
   background-color: var(--header-font);
   box-shadow: 0 8px 0 0 var(--header-font), 0 16px 0 0 var(--header-font);
