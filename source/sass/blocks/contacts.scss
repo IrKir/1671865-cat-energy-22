@@ -1,9 +1,11 @@
 .contacts {
-  background-color: var(--additional-darkaccent);
-  
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
+}
+
+.contacts--color {
+  background-color: var(--additional-darkaccent);
 }
 
 .contacts__invitation {
