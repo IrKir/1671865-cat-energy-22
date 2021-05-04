@@ -115,6 +115,10 @@
     padding-bottom: 8px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 6px;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -73,7 +73,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 18px;
+      top: 22px;
       left: -640px;
       width: 600px;
       height: 2px;
@@ -85,7 +85,7 @@
       content: "";
       width: 650px;
       height: 2px;
-      margin-top: 18px;
+      margin-top: 24px;
       box-shadow: 650px 0 0 var(--basic-accent);
     }
   }
@@ -94,7 +94,7 @@
 .addition__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   list-style: none;
   font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
@@ -115,6 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     margin-left: 0;
   }
 }
@@ -136,7 +137,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-bottom: 66px;
+    margin-bottom: 23px;
   }
 }
 
@@ -147,7 +148,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 23px;
   }
 }
 

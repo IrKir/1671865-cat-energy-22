@@ -37,24 +37,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     margin-left: 43px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
     margin-left: 0;
+    margin-bottom: 19px;
   }
 }
 
 .common__wrapper:last-child {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,17 +67,23 @@
 .common__label {
   min-width: fit-content;
   margin-right: 15px;
-  padding: 14px 0;
+  padding: 13px 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 14px;
-    padding: 10px 0 12px;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 17px;
+    padding: 10px 0 11px;
+
   }
 }
 
 .common__input {
   flex-grow: 1;
-  padding: 13px 15px;
+  padding: 13px 15px 8px;
   font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -103,11 +111,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 19px 12px;
+    padding: 12px 19px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 20px;
+    padding: 9px 20px;
   }
 }
 

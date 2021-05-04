@@ -73,13 +73,14 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: 42px;
     margin-bottom: 76px;
     margin-left: 0;
 
     &::before {
       position: absolute;
       content: "";
-      top: 18px;
+      top: 21px;
       left: -640px;
       width: 600px;
       height: 2px;
@@ -90,7 +91,7 @@
       content: "";
       width: 145px;
       height: 2px;
-      margin-top: 18px;
+      margin-top: 21px;
       box-shadow:
         144px 0 0 var(--basic-accent),
         288px 0 0 var(--basic-accent),

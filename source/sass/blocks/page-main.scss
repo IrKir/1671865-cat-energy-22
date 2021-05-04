@@ -1,7 +1,7 @@
 .page-main__title {
   width: 280px;
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 37px;
   font-family: var(--accent-font), "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
@@ -22,6 +22,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0;
+    padding-top: 40px;
     padding-bottom: 56px;
   }
 }
