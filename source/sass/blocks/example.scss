@@ -435,6 +435,7 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
+    --shadow-color: hsl(0 0% 0% / var(--shadow-opacity, 0.16));
     position: absolute;
     top: -14px;
     left: 200px;
@@ -442,12 +443,33 @@
     padding: 0;
     width: 34px;
     height: 34px;
+    border: 1px solid var(--additional-light);
     border-radius: 50%;
-    box-shadow: (0 0 0 12px var(--accent-text-color) inset),
-      (0 1px 3px var(--shadow));
+    background-color: var(--additional-light);
+    background-image: url("../../img/stack.svg#thumb");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:
+      var(--shadow-x, 0)
+      var(--shadow-y, 1px)
+      var(--shadow-blur, 3px)
+      var(--shadow-spread, 0)
+      var(--shadow-color);
+
+    &:hover {
+      --shadow-y: 2px;
+      --shadow-blur: 4px;
+      --shadow-opacity: 0.19;
+      cursor: grab;
+    }
 
     &:active {
-      border: 1px solid var(--basic-accent);
+      --shadow-y: 3px;
+      --shadow-blur: 5px;
+      --shadow-opacity: 0.2;
+      border-color: var(--basic-accent);
+      cursor: grabbing;
     }
   }
 }
