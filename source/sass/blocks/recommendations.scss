@@ -49,11 +49,12 @@
 }
 
 .recommendations__item {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     width: 324px;
     margin-bottom: 37px;
     padding: 151px 38px 57px 0;
@@ -66,26 +67,66 @@
     margin-bottom: 0;
     padding-right: 0;
   }
-}
 
-.recommendations__item:last-child {
-  margin-bottom: 42px;
+  &:last-child {
+    margin-bottom: 42px;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 47px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+  &::before {
+    content: "";
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    background-color: var(--basic-accent);
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/stack.svg#leaf");
+  }
+
+  &--water::before {
+    background-image: url("../../img/stack.svg#water");
+  }
+
+  &--cutlery::before {
+    background-image: url("../../img/stack.svg#cutlery");
+  }
+
+  &--clock::before {
+    background-image: url("../../img/stack.svg#clock");
   }
 }
 
 .recommendations__text {
-  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
-  padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -96,50 +137,5 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     margin-top: 2px;
-  }
-}
-
-.recommendations__text:first-child {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    top: -3px;
-    left: 0;
-    float: right;
-    background: url("../../img/stack.svg#icon-leaf");
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
-    background-position: 0 0, 0 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      width: 80px;
-      height: 80px;
-      top: -112px;
-      left: 0;
-    }
-  }
-}
-
-.recommendations__text--water:first-child {
-  &::before {
-    background-image: url("../../img/stack.svg#icon-water");
-  }
-}
-
-.recommendations__text--cutlery:first-child {
-  &::before {
-    background-image: url("../../img/stack.svg#icon-cutlery");
-  }
-}
-
-.recommendations__text--clock:first-child {
-  &::before {
-    background-image: url("../../img/stack.svg#icon-clock");
   }
 }
