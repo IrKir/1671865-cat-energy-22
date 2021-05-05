@@ -45,6 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: counterRec;
   }
 }
 
@@ -60,6 +61,7 @@
     padding: 151px 38px 57px 0;
     font-size: 16px;
     line-height: 24px;
+    counter-increment: counterRec;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,6 +119,20 @@
 
   &--clock::before {
     background-image: url("../../img/stack.svg#clock");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: counter(counterRec);
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 115px;
+      font-family: var(--accent-font);
+      font-size: 280px;
+      line-height: 1;
+      color: var(--additional-darkaccent);
+    }
   }
 }
 
