@@ -45,7 +45,7 @@
 .social__link--vkontakte {
   width: 23px;
   height: 16px;
-  mask-image: url("../../img/stack.svg#icon_vkontakte");
+  mask-image: url("../../img/stack.svg#vk");
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -56,7 +56,7 @@
 .social__link--instagram {
   width: 17px;
   height: 17px;
-  mask-image: url("../../img/stack.svg#icon-insta");
+  mask-image: url("../../img/stack.svg#ig");
 
   @media (min-width: $tablet-width) {
     width: 23px;
@@ -67,7 +67,7 @@
 .social__link--fb {
   width: 11px;
   height: 18px;
-  mask-image: url("../../img/stack.svg#icon-fb");
+  mask-image: url("../../img/stack.svg#fb");
 
   @media (min-width: $tablet-width) {
     width: 15px;
