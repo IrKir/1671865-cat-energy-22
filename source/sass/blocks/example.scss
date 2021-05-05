@@ -1,5 +1,5 @@
 .example {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   background-color: var(--additional-grayish);
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    margin-top: -150px;
+    margin-top: -152px;
     padding-top: 12px;
     padding-bottom: 79px;
   }
@@ -392,7 +392,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 34px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -404,9 +404,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 590px;
     margin: 0;
     margin-top: 5px;
-    margin-left: 32px;
+    margin-left: 25px;
   }
 }
 
