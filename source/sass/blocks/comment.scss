@@ -115,6 +115,10 @@
   text-align: center;
   border: 1px solid var(--additional-accent-grayish);
 
+  &:focus-visible {
+    outline: 2px solid var(--basic-text-color);
+  }
+
   @media (min-width: $tablet-width) {
     width: 631px;
     min-height: 175px;
@@ -130,8 +134,4 @@
     width: 1220px;
     margin-left: 0;
   }
-}
-
-.comment__textarea:focus-visible {
-  outline: 1px solid var(--basic-text-color);
 }

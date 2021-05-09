@@ -288,4 +288,9 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    border: 1px solid var(--header-font);
+    outline: none;
+  }
 }

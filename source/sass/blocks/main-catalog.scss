@@ -59,6 +59,11 @@
 
 .main-catalog__link {
   text-decoration: none;
+
+  &:focus-visible {
+    border: 2px solid var(--header-font);
+    outline: none;
+  }
 }
 
 .main-catalog__title {
@@ -333,6 +338,11 @@
     color: var(--hover-gray);
   }
 
+  &:focus-visible {
+    border: 2px solid var(--header-font);
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 249px;
     margin: 0 auto;
@@ -360,6 +370,11 @@
     left: 125px;
     background: url("../../img/stack.svg#plus");
     background-repeat: no-repeat;
+
+    &:focus-visible {
+      border: 2px solid var(--header-font);
+      outline: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -10,10 +10,15 @@
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-text-color);
-}
 
-.copyright__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    border: 2px solid var(--header-font);
+    outline: none;
+  }
 }
 
 .copyright__text {
@@ -41,10 +46,10 @@
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center center;
-}
 
-.copyright__logo--color:hover {
-  background-color: var(--basic-accent);
+  &:hover {
+    background-color: var(--basic-accent);
+  }
 }
 
 .copyright__text:hover + .copyright__logo--color {

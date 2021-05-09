@@ -29,12 +29,17 @@
     width: 174px;
     height: 52px;
   }
-}
 
-.page-header__identity:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.page-header__identity:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    border: 2px solid var(--header-font);
+    outline: none;
+  }
 }

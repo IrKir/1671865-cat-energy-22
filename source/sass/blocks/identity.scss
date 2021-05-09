@@ -23,6 +23,11 @@
   object-fit: cover;
   flex-shrink: 0;
 
+  &:focus-visible {
+    border: 2px solid var(--header-font);
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     align-items: center;

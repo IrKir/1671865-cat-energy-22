@@ -184,7 +184,7 @@
   opacity: 0.3;
 }
 
-.addition__input:focus + .addition__label::before {
+.addition__input:focus-visible + .addition__label::before {
   border: 2px solid var(--header-font);
 }
 
@@ -202,8 +202,4 @@
     left: -45px;
     top: 8px;
   }
-}
-
-.addition__input:focus-visible {
-  outline: 1px solid var(--basic-text-color);
 }
