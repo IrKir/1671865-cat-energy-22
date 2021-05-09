@@ -97,16 +97,16 @@
     border: 1px solid var(--additional-light);
   }
 
-  &:focus {
-    border: 1px solid var(--basic-text-color);
-  }
-
   &:invalid {
     border: 1px solid var(--error);
   }
 
   &:focus-visible {
-    outline: 1px solid var(--basic-text-color);
+    outline: 2px solid var(--basic-text-color);
+  }
+
+  &:not(:hover):not(:focus-visible):not(:active) {
+    appearance: textfield;
   }
 
   @media (min-width: $tablet-width) {
