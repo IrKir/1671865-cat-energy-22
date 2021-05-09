@@ -184,6 +184,10 @@
   opacity: 0.3;
 }
 
+.addition__input:focus + .addition__label::before {
+  border: 2px solid var(--header-font);
+}
+
 .addition__input:checked + .addition__label::after {
   content: "";
   position: absolute;

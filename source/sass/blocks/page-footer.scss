@@ -40,14 +40,14 @@
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center center;
-}
 
-.page-footer__mark--color:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-.page-footer__mark--color:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {

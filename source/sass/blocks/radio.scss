@@ -113,8 +113,8 @@
   opacity: 0.3;
 }
 
-.radio__input:focus-visible {
-  outline: 1px solid var(--basic-text-color);
+.radio__input:focus + .radio__label::before {
+  border: 2px solid var(--header-font);
 }
 
 .radio__label {
