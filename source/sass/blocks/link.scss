@@ -1,37 +1,6 @@
 .link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 11px 0 10px;
-  font-family: var(--accent-font), "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--accent-text-color);
-  background-color: var(--basic-accent);
-  border: none;
-
-  &:hover,
-  &:active {
-    background-color: var(--link-hover);
-  }
-
-  &:active {
-    color: var(--link-pressed-font);
-  }
-
   &:focus-visible {
-    border: 2px solid var(--header-font);
-    outline: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    padding: 14px 0;
+    outline: 2px solid var(--header-font);
+    outline-offset: 2px;
   }
 }

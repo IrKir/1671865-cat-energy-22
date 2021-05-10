@@ -185,7 +185,7 @@
 }
 
 .addition__input:focus-visible + .addition__label::before {
-  border: 2px solid var(--header-font);
+  outline: 1px solid var(--header-font);
 }
 
 .addition__input:checked + .addition__label::after {

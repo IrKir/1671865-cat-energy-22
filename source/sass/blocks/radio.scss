@@ -116,7 +116,7 @@
 }
 
 .radio__input:focus-visible + .radio__label::before {
-  border: 2px solid var(--header-font);
+  outline: 1px solid var(--header-font);
 }
 
 .radio__label {

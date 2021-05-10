@@ -116,7 +116,7 @@
   border: 1px solid var(--additional-accent-grayish);
 
   &:focus-visible {
-    outline: 2px solid var(--basic-text-color);
+    outline: 1px solid var(--basic-text-color);
   }
 
   @media (min-width: $tablet-width) {

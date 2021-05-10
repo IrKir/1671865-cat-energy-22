@@ -102,7 +102,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid var(--basic-text-color);
+    outline: 1px solid var(--basic-text-color);
   }
 
   &:not(:hover):not(:focus-visible):not(:active) {

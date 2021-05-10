@@ -14,11 +14,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  &:focus-visible {
-    border: 2px solid var(--header-font);
-    outline: none;
-  }
 }
 
 .copyright__text {

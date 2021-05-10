@@ -189,10 +189,6 @@
     border: 1px solid var(--error);
   }
 
-  &:focus {
-    border: 1px solid var(--basic-text-color);
-  }
-
   &:focus-visible {
     outline: 1px solid var(--basic-text-color);
   }
