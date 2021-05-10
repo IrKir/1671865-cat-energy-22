@@ -193,10 +193,11 @@
   color: var(--basic-text-color);
 
   @media (min-width: $tablet-width) {
-    width: 225px;
+    width: 230px;
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 20px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -209,6 +210,13 @@
 .others-goods__key {
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.others-goods__definition {
+  @media (min-width: $tablet-width) {
+    width: 45px;
+    margin-left: 49px;
   }
 }
 
