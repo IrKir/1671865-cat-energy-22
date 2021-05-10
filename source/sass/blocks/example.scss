@@ -493,6 +493,10 @@
     text-decoration-style: solid;
   }
 
+  &:active {
+    text-decoration: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 70px;
     padding: 0;
