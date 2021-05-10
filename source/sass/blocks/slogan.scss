@@ -67,7 +67,6 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min min min 1fr;
-    height: 535px;
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -105,7 +104,7 @@
     width: 420px;
     margin-top: 78px;
     margin-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }
 }
 
@@ -133,7 +132,7 @@
     width: 285px;
     margin-left: 0;
     // margin-top: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 52px;
   }
 }
 
@@ -182,6 +181,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 3 / 4;
     margin: 0;
-    padding: 7px 26px 6px;
+    margin-bottom: 172px;
+    padding: 13px 0;
   }
 }

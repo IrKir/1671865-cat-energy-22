@@ -30,11 +30,23 @@
   display: block;
   margin: 2px;
   width: 23px;
-
   background-color: var(--logo);
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: center center;
+
+  &:hover {
+    background-color: var(--basic-accent);
+  }
+
+  &:active {
+    background-color: var(--basic-accent);
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    border: 9px solid var(--header-font);
+  }
 
   @media (min-width: $tablet-width) {
     width: 30px;
@@ -73,13 +85,4 @@
     width: 15px;
     height: 27px;
   }
-}
-
-.social__link:hover {
-  background-color: var(--basic-accent);
-}
-
-.social__link:active,
-.social__link:focus {
-  border: 9px solid var(--header-font);
 }
