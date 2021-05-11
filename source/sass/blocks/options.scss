@@ -232,10 +232,10 @@
 
 .options__link {
   display: flex;
+  align-items: center;
   gap: 17px;
   margin: 0 18px;
-  padding-top: 19px;
-  padding-bottom: 21px;
+  padding: 12px 0;
   width: fit-content;
   border-top: 1px solid var(--additional-accent);
   font-family: var(--accent-font), "Arial", sans-serif;
@@ -266,7 +266,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 30px;
     border: none;

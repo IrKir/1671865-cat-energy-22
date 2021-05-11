@@ -94,15 +94,15 @@
   width: 4ch;
 
   &:hover {
-    border: 1px solid var(--additional-light);
+    border: 2px solid var(--additional-light);
   }
 
   &:invalid {
-    border: 1px solid var(--error);
+    border: 2px solid var(--error);
   }
 
   &:focus-visible {
-    outline: 1px solid var(--basic-text-color);
+    outline: 2px solid var(--basic-text-color);
   }
 
   &:not(:hover):not(:focus-visible):not(:active) {

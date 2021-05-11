@@ -1,6 +1,6 @@
 .recommendations {
-  @media (min-width: $desktop-width) {
-    padding-top: 21px;
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-top: 20px;
     margin-bottom: 32px;
   }
 }
