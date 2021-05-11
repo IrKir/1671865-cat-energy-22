@@ -180,12 +180,17 @@
   border: 2px solid var(--radio-hover);
 }
 
+.addition__input:active + .addition__label {
+  opacity: 0.3;
+}
+
 .addition__input:disabled + .addition__label {
   opacity: 0.3;
 }
 
 .addition__input:focus-visible + .addition__label::before {
-  outline: 1px solid var(--header-font);
+  outline: 2px solid var(--header-font);
+  outline-offset: 2px;
 }
 
 .addition__input:checked + .addition__label::after {

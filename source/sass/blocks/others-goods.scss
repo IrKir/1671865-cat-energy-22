@@ -102,6 +102,8 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin-bottom: 69px;
+    border-left: 1px solid var(--additional-light);
+    border-right: 1px solid var(--additional-light);
   }
 
   @media (min-width: $desktop-width) {
@@ -112,6 +114,7 @@
     align-items: stretch;
     justify-content: space-between;
     margin-bottom: 86px;
+    border: none;
   }
 }
 

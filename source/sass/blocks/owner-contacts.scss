@@ -178,7 +178,7 @@
   border: 1px solid var(--additional-accent-grayish);
 
   &:hover {
-    border: 1px solid var(--additional-light);
+    border: 2px solid var(--additional-light);
 
     .icon {
       background: var(--basic-accent);
@@ -186,11 +186,11 @@
   }
 
   &:invalid {
-    border: 1px solid var(--error);
+    border: 2px solid var(--error);
   }
 
   &:focus-visible {
-    outline: 1px solid var(--basic-text-color);
+    outline: 2px solid var(--basic-text-color);
   }
 
   @media (min-width: $tablet-width) {

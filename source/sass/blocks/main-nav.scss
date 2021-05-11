@@ -112,7 +112,7 @@
   }
 
   &:focus-visible {
-    outline: 1px solid var(--header-font);
+    outline: 2px solid var(--header-font);
   }
 
   &[aria-current="page"] {

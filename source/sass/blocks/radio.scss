@@ -111,12 +111,18 @@
   border: 1px solid var(--radio-hover);
 }
 
+.radio__input:active + .radio__label::before,
+.radio__input:active + .radio__label::after {
+  opacity: 0.3;
+}
+
+
 .radio__input:disabled + .radio__label {
   opacity: 0.3;
 }
 
 .radio__input:focus-visible + .radio__label::before {
-  outline: 1px solid var(--header-font);
+  outline: 2px solid var(--header-font);
 }
 
 .radio__label {
